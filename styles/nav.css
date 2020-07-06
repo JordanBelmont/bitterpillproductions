@@ -1,0 +1,19 @@
+html {
+   box-sizing: border-box;
+}
+
+*, *:before, *:after {
+   box-sizing: inherit;
+}
+
+nav {
+   padding: 40px 40px 0px 40px;
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-evenly;
+}
+
+a {
+   padding: 0.5em;
+   text-decoration: none;
+}
