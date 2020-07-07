@@ -1,19 +1,26 @@
-html {
-   box-sizing: border-box;
-}
-
-*, *:before, *:after {
-   box-sizing: inherit;
-}
-
 nav {
-   padding: 40px 40px 0px 40px;
+   margin: 8px;
+}
+
+ul {
    display: flex;
    flex-flow: row nowrap;
-   justify-content: space-evenly;
+   justify-content: space-around;
+   border-bottom: 1px;
+   border-style: solid;
+   padding-bottom: 20px;
+}
+
+li {
+   height: 60px;
+   display: flex;
+   align-items: flex-end;
 }
 
 a {
-   padding: 0.5em;
    text-decoration: none;
+}
+
+.image {
+   padding: 100px;
 }
