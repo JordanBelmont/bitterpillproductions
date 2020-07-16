@@ -11,7 +11,9 @@
 }
 
 @font-face {
-   font-family: 
+   font-family: 'Virtualreality';
+   font-weight: normal;
+   src: url('../fonts/VirtualReality-Regular.ttf') format('truetype')
 }
 
 a {
@@ -21,5 +23,55 @@ a {
    color: black;
 }
 
+.hover-box {
+   width: 28vw;
+   height: 10vw;
+   top: 37%;
+   left: 36.2%;
+   text-align: center;
+   position: absolute;
+}
+
+[class*='title'] {
+   font-family:'Virtualreality', sans-serif;
+   font-size: 2vw;
+   color: rgb(153, 255, 0);
+   position: absolute;
+   text-shadow:1px 1px 10px rgb(153, 255, 0), 1px 1px 10px rgb(153, 255, 0);
+}
+
+.primary-top-title {
+   top: 25%;
+   left: 11%;
+}
+
+.primary-bottom-title {
+   top: 60%;
+   left: 20%;
+}
+
+.secondary-top-title {
+   top: 25%;
+   left: 18%;
+   display: none;
+}
+
+.secondary-bottom-title {
+   top: 60%;
+   left: 18.5%;
+   display: none;
+}
+
+.hover-box:hover .secondary-top-title,
+.hover-box:hover .secondary-bottom-title {
+   display: block;
+   color: rgb(248, 2, 248);
+   text-shadow:1px 1px 10px rgb(248, 2, 248), 1px 1px 10px rgb(248, 2, 248);
+}
+
+.hover-box:hover .primary-top-title, 
+.hover-box:hover .primary-bottom-title {
+   display: none;
+}
 
 
