@@ -1,13 +1,11 @@
 nav {
-   margin: 8px;
+   padding: 0px 8px;
 }
 
 ul {
    display: flex;
    flex-flow: row nowrap;
    justify-content: space-around;
-   border-bottom: 1px;
-   border-style: solid;
    padding-bottom: 20px;
 }
 
@@ -19,8 +17,4 @@ li {
 
 a {
    text-decoration: none;
-}
-
-.image {
-   padding: 100px;
 }

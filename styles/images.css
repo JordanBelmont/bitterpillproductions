@@ -1,0 +1,7 @@
+.hero {
+   background-image: url("../images/Splash.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   padding: 30vw 10vw 20vw 10vw;
+}
