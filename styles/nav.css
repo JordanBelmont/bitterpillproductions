@@ -1,5 +1,5 @@
 nav {
-   padding: 0px 8px;
+   padding: 0px;
 }
 
 ul {
@@ -10,11 +10,7 @@ ul {
 }
 
 li {
-   height: 60px;
+   height: 40px;
    display: flex;
    align-items: flex-end;
-}
-
-a {
-   text-decoration: none;
 }

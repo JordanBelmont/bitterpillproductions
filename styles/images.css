@@ -1,8 +1,17 @@
 .hero {
    background-image: url("../images/Splash.jpg");
-   background-size: cover;
+   background-size: 95%;
    background-repeat: no-repeat;
    background-position: center;
    padding: 30vw 10vw 20vw 10vw;
    position: relative;
+}
+
+.container {
+   text-align: center;
+}
+
+.pill {
+   width: 40px;
+   margin: 10px;
 }
