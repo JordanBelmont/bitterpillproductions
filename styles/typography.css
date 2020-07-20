@@ -10,16 +10,59 @@
    src: url('../fonts/VirtualReality-Regular.ttf') format('truetype')
 }
 
-a {
-   font-family:'Poppins-SemiBold', sans-serif;
-   font-size: 1rem;
-   text-transform: uppercase;
-   color: #7F7F7F;
-   text-decoration: none;
+@font-face {
+   font-family: 'CodeBold';
+   font-weight: normal;
+   src: url('../fonts/Code_/CODE-Bold.otf') format('opentype')
 }
 
-a:hover {
-   color: #000000;
+@font-face {
+   font-family: 'CodeLight';
+   font-weight: normal;
+   src: url('../fonts/Code_/CODE-Light.otf') format('opentype')
+}
+
+@font-face {
+   font-family: 'Nasal';
+   font-weight: normal;
+   src: url('../fonts/nasalization-rg.ttf') format('truetype')
+}
+
+a {
+   font-family: 'Nasal', sans-serif;
+   font-size: 1rem;
+   text-transform: uppercase;
+   text-decoration: none;
+   letter-spacing: 2px;
+   color: #7F7F7F;
+   position: relative;
+   display: inline-block;
+}
+
+a:hover span {
+   transform: translateX(0);
+}
+
+span {
+   position: absolute;
+   top: 0;
+   left: 0;
+   overflow: hidden;
+   transform: translateX(-100%);
+   transition: transform 275ms ease;
+}
+
+span::before { 
+   display: inline-block;
+   content: attr(data-content);
+   color: rgb(146, 6, 6);
+   transform: translateX(100%);
+   overflow: hidden;
+   transition: transform 275ms ease;
+}
+
+a:hover span::before {
+   transform: translateX(0);
 }
 
 .hover-box {
@@ -32,52 +75,49 @@ a:hover {
 }
 
 [class*='title'] {
-   font-family:'Virtualreality', sans-serif;
+   font-family: 'Virtualreality', sans-serif;
    font-size: 2vw;
    color: #68E931;
    position: absolute;
-   text-shadow:1px 1px 10px #68E931, 1px 1px 10px #68E931;
+   text-shadow: 1px 1px 10px #68E931, 1px 1px 10px #68E931;
 }
 
 .primary-top-title {
-   top: 25%;
+   top: 27%;
    left: 9.5%;
 }
 
 .primary-bottom-title {
-   top: 60%;
+   top: 62%;
    left: 18.5%;
 }
 
 .secondary-top-title {
-   top: 25%;
+   top: 27%;
    left: 18%;
    display: none;
 }
 
 .secondary-bottom-title {
-   top: 60%;
+   top: 62%;
    left: 18.5%;
    display: none;
 }
 
-.hover-box:hover .secondary-top-title,
-.hover-box:hover .secondary-bottom-title {
+.hover-box:hover .secondary-top-title, .hover-box:hover .secondary-bottom-title {
    display: block;
    color: #D5458F;
-   text-shadow:1px 1px 10px #D5458F, 1px 1px 10px #D5458F;
+   text-shadow: 1px 1px 10px #D5458F, 1px 1px 10px #D5458F;
 }
 
-.hover-box:hover .primary-top-title, 
-.hover-box:hover .primary-bottom-title {
+.hover-box:hover .primary-top-title, .hover-box:hover .primary-bottom-title {
    display: none;
 }
 
 .foot {
-   font-family: sans-serif;
-   font-size: 0.8rem;
+   font-family: 'Nasal';
+   font-size: 0.9rem;
    color: #7F7F7F;
    padding: 10px;
+   letter-spacing: 1px;
 }
-
-
