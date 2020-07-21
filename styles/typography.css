@@ -1,8 +1,3 @@
-@font-face {
-   font-family: 'Poppins-SemiBold';
-   font-weight: normal;
-   src: url('../fonts/Poppins/Poppins-SemiBold.ttf') format('truetype')
-}
 
 @font-face {
    font-family: 'Virtualreality';
@@ -28,41 +23,31 @@
    src: url('../fonts/nasalization-rg.ttf') format('truetype')
 }
 
-a {
+.nav-link {
    font-family: 'Nasal', sans-serif;
    font-size: 1rem;
    text-transform: uppercase;
    text-decoration: none;
    letter-spacing: 2px;
-   color: #7F7F7F;
    position: relative;
    display: inline-block;
-}
-
-a:hover span {
-   transform: translateX(0);
-}
-
-span {
-   position: absolute;
-   top: 0;
-   left: 0;
    overflow: hidden;
-   transform: translateX(-100%);
-   transition: transform 275ms ease;
+   /* Clips any content outside of the hyperlink during the hover transition */
+   background: linear-gradient(to right, #CC339A, #CC339A 50%, #000000 50%);
+   /* Creates a hard stop at 50% to the starting color we want the link to be and the color that it will change to */
+   background-clip: text;
+   /* Clips the gradient and the text value to display the text */
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-size: 200% 100%;
+   background-position: 100%;
+   /* have the starting color appear */
+   transition: background-position 0.5s ease-in;
 }
 
-span::before { 
-   display: inline-block;
-   content: attr(data-content);
-   color: rgb(146, 6, 6);
-   transform: translateX(100%);
-   overflow: hidden;
-   transition: transform 275ms ease;
-}
-
-a:hover span::before {
-   transform: translateX(0);
+.nav-link:hover {
+   background-position: 0 100%;
+   /* have the link fill from left to right on hover */
 }
 
 .hover-box {
@@ -83,31 +68,31 @@ a:hover span::before {
 }
 
 .primary-top-title {
-   top: 27%;
+   top: 33%;
    left: 9.5%;
 }
 
 .primary-bottom-title {
-   top: 62%;
+   top: 68%;
    left: 18.5%;
 }
 
 .secondary-top-title {
-   top: 27%;
+   top: 33%;
    left: 18%;
    display: none;
 }
 
 .secondary-bottom-title {
-   top: 62%;
+   top: 68%;
    left: 18.5%;
    display: none;
 }
 
 .hover-box:hover .secondary-top-title, .hover-box:hover .secondary-bottom-title {
    display: block;
-   color: #D5458F;
-   text-shadow: 1px 1px 10px #D5458F, 1px 1px 10px #D5458F;
+   color: #CC339A;
+   text-shadow: 1px 1px 10px #CC339A, 1px 1px 10px #CC339A;
 }
 
 .hover-box:hover .primary-top-title, .hover-box:hover .primary-bottom-title {
@@ -117,7 +102,7 @@ a:hover span::before {
 .foot {
    font-family: 'Nasal';
    font-size: 0.9rem;
-   color: #7F7F7F;
+   color: #000000;
    padding: 10px;
    letter-spacing: 1px;
 }

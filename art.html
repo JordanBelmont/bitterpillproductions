@@ -1,33 +1,60 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 
 <head>
-   <meta charset='utf-8'>
-   <meta name='websitedescription' content='test'>
-   <meta name='viewport' content='width=device-width, initial-scale=1'>
-   <meta http-equiv='x-ua-compatible' content='ie=edge'>
+   <meta charset="utf-8">
+   <meta name="websitedescription" content="test">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
    <link rel='stylesheet' href='styles/style.css'>
    <link rel='apple-touch-icon' href='apple-touch-icon.png'>
-   <script defer src='bitter.js'></script>
+   <script defer src='/javascript/bitter.js'></script>
 
    <title>Bitter Pill Productions</title>
 </head>
 
 <body>
-   <div class='container'>
-      <img class="pill" src="images/Bitter-Pill-Logo.png" alt="bitter pill logo">
+   <div class="nav-container-gallery">
+      <a href="index.html">
+         <img class="pill" src="images/bitterpill-logo.png" alt="bitter pill logo">
+      </a>
       <nav>
          <ul>
-            <li><a href='http://127.0.0.1:5500/art.html'><span data-content="Art" aria-hidden="true"></span>Art</a></li>
-            <li><a href=''><span data-content="Code" aria-hidden="true"></span>Code</a></li>
-            <li><a href=''><span data-content="Copy" aria-hidden="true"></span>Copy</a></li>
-            <li><a href=''><span data-content="Blog" aria-hidden="true"></span>Blog</a></li>
-            <li><a href=''><span data-content="Bio" aria-hidden="true"></span>Bio</a></li>
+            <li><a class="nav-link" href="art.html"></span>Art</a></li>
+            <li><a class="nav-link" href="code.html"></span>Code</a></li>
+            <li><a class="nav-link" href="copy.html"></span>Copy</a></li>
+            <li><a class="nav-link" href="blog.html"></span>Blog</a></li>
+            <li><a class="nav-link" href="bio.html"></span>Bio</a></li>
          </ul>
       </nav>
    </div>
 
+   <div class="art-gallery">
+      <div class="row-1">
+         <img class='gallery-image-1' src="images/Candle Cove.jpg" alt="Candle Cove">
+         <img class='gallery-image-1' src="images/Super Wario Bros.jpg" alt="Wario Bros">
+         <img class='gallery-image-1' src="images/Pokemon Violet.jpg" alt="Pokemon Violet">
+      </div>
+      <div class='row-2'>
+         <img class='gallery-image-2' src="images/Don't Hug Me I'm Scared.jpg" alt="Don't Hug Me I'm Scared">
+         <img class='gallery-image-2' src="images/What You Are.jpg" alt="What You Are">
+      </div>
+      <div class="row-3">
+         <img class='gallery-image-1' src="images/Don't Let Him In.jpg" alt="The Babadook">
+         <img class='gallery-image-1' src="images/The Fifth Element.jpg" alt="Fifth Element">
+         <img class='gallery-image-1' src="images/Eye of the Storm Tour.jpg" alt="Eye of the Storm">
+      </div>
+      <div class='row-4'>
+         <img class='gallery-image-2' src="images/Lobby Treats.jpg" alt="Lobby Treats">
+         <img class='gallery-image-2' src="images/Bloodrayne.jpg" alt="Bloodrayne">
+      </div>
+      <div class='row-5'>
+         <img class='gallery-image-1' src="images/Carmen Sandiego.jpg" alt="Carmen Sandiego">
+         <img class='gallery-image-1' src="images/Hungry Like the Wolf.jpg" alt="Hungry Like The Wolf">
+         <img class='gallery-image-1' src="images/Best Served Cold Tour.jpg" alt="Lobby Treats">
+      </div>
+   </div>
 
    <footer>
       <p class="foot">"For all your creative aches and pains"</p>

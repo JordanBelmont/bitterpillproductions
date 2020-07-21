@@ -1,3 +1,15 @@
+.nav-container {
+   text-align: center;
+   background-color: white;
+}
+
+.nav-container-gallery {
+   text-align: center;
+   position: sticky;
+   top: 0px;
+   background-color: white;
+}
+
 nav {
    padding: 0px;
 }

@@ -1,0 +1,25 @@
+.art-gallery {
+   margin: 20px 20px;
+}
+
+.row-1,
+.row-2,
+.row-3,
+.row-4,
+.row-5 {
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-between;
+   margin-bottom: 20px;
+}
+
+.gallery-image-1,
+.gallery-image-3,
+.gallery-image-5 {
+   width: 30%;
+}
+
+.gallery-image-2,
+.gallery-image-4 {
+   width: 48.5%;
+}
