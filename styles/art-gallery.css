@@ -6,7 +6,8 @@
 .row-2,
 .row-3,
 .row-4,
-.row-5 {
+.row-5,
+.row-6 {
    display: flex;
    flex-flow: row nowrap;
    justify-content: space-between;
@@ -17,13 +18,14 @@
    cursor: pointer;
 }
 
-.gallery-image-1,
-.gallery-image-3,
-.gallery-image-5 {
+.gallery-image-1 {
    width: 30%;
 } 
 
-.gallery-image-2,
-.gallery-image-4 {
+.gallery-image-2 {
    width: 48.5%;
+}
+
+.gallery-image-3 {
+   width: 22%;
 }
