@@ -1,6 +1,6 @@
 .art-gallery {
    margin: 20px 20px;
-}
+} 
 
 .row-1,
 .row-2,
@@ -13,11 +13,15 @@
    margin-bottom: 20px;
 }
 
+.art-gallery img {
+   cursor: pointer;
+}
+
 .gallery-image-1,
 .gallery-image-3,
 .gallery-image-5 {
    width: 30%;
-}
+} 
 
 .gallery-image-2,
 .gallery-image-4 {

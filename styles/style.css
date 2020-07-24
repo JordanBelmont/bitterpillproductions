@@ -3,5 +3,7 @@
 @import 'typography.css';
 @import 'nav.css';
 @import 'images.css';
-@import 'gallery.css';
+@import 'art-gallery.css';
+@import 'lightbox.css';
+@import 'copy-gallery.css';
 @import 'footer.css';
