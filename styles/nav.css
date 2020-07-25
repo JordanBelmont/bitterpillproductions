@@ -8,6 +8,12 @@
    position: sticky;
    top: 0px;
    background-color: white;
+   z-index: 5;
+}
+
+.pill {
+   width: 80px;
+   margin: 10px;
 }
 
 nav {
@@ -25,5 +31,32 @@ li {
    height: 40px;
    display: flex;
    align-items: flex-end;
+}
+
+.nav-link {
+   font-family: 'Nasal', sans-serif;
+   font-size: 1rem;
+   text-transform: uppercase;
+   text-decoration: none;
+   letter-spacing: 2px;
+   position: relative;
+   display: inline-block;
+   overflow: hidden;
+   /* Clips any content outside of the hyperlink during the hover transition */
+   background: linear-gradient(to right, #CC339A, #CC339A 50%, #000000 50%);
+   /* Creates a hard stop at 50% to the starting color and the color that it will change to */
+   background-clip: text;
+   /* Clips the gradient and the text value to display the text */
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-size: 200% 100%;
+   background-position: 100%;
+   /* have the starting color appear */
+   transition: background-position 0.5s ease-in;
+}
+
+.nav-link:hover {
+   background-position: 0 100%;
+   /* have the link fill from left to right on hover */
 }
 

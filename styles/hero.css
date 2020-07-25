@@ -1,0 +1,66 @@
+.hero-container {
+   margin-left: 40px;
+   margin-right: 40px;
+}
+
+.hero {
+   background-image: url("../images/Splash.jpg");
+   background-size: 100%;
+   background-repeat: no-repeat;
+   background-position: center;
+   padding: 30vw 0vw 25vw 0vw;
+   position: relative;
+}
+
+.hover-box {
+   width: 28vw;
+   height: 10vw;
+   top: 32%;
+   left: 36.2%;
+   text-align: center;
+   position: absolute;
+}
+
+[class*='header'] {
+   font-family: 'Virtualreality', sans-serif;
+   font-size: 2vw;
+   color: #68E931;
+   position: absolute;
+   text-shadow: 1px 1px 10px #68E931, 1px 1px 10px #68E931;
+}
+
+.primary-top-header {
+   top: 33%;
+   left: 9.5%;
+   pointer-events: none;
+}
+
+.primary-bottom-header {
+   top: 68%;
+   left: 18.5%;
+   pointer-events: none;
+}
+
+.secondary-top-header {
+   top: 33%;
+   left: 18%;
+   display: none;
+   pointer-events: none;
+}
+
+.secondary-bottom-header {
+   top: 68%;
+   left: 18.5%;
+   display: none;
+   pointer-events: none;
+}
+
+.hover-box:hover .secondary-top-header, .hover-box:hover .secondary-bottom-header {
+   display: block;
+   color: #CC339A;
+   text-shadow: 1px 1px 10px #CC339A, 1px 1px 10px #CC339A;
+}
+
+.hover-box:hover .primary-top-header, .hover-box:hover .primary-bottom-header {
+   display: none;
+}
