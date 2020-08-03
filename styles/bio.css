@@ -1,14 +1,23 @@
 .grid-bio {
-   margin: 40px 100px;
+   margin: 50px 80px;
    display: grid;
-   grid-template-columns: 30% 70%;
+   grid-template-columns: repeat(5, 1fr);
+   /* splits the grid into 5 equal fractions going horizontally */
+   grid-template-rows: repeat(5, 1fr);
+   /* splits the grid into 5 equal fractions going vertically */
+   grid-gap: 40px;
+   /* space between the grids */
 }
 
-.grid-bio div {
-   background-color: #eee;
-   padding: 1em;
+.w-2 img {
+   object-fit: cover;
+   width: 100%;
+   max-height: 100%;
 }
 
-.grid-bio div:nth-child(odd) {
-   background-color: #ddd;
+.stats {
+   font-family: 'Nasal';
+   font-size: 0.8rem;
+   line-height: 24px;
+   text-align: justify;
 }
