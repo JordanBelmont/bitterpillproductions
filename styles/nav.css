@@ -9,6 +9,7 @@
    top: 0px;
    background-color: white;
    z-index: 5;
+   /* ensure the nav bar is in front of every other element */
 }
 
 .pill {

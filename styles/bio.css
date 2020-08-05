@@ -5,8 +5,10 @@
    /* splits the grid into 5 equal fractions going horizontally */
    grid-template-rows: repeat(5, 1fr);
    /* splits the grid into 5 equal fractions going vertically */
-   grid-gap: 40px;
-   /* space between the grids */
+   grid-column-gap: 50px;
+   /* gap size between columns */
+   grid-row-gap: 10px;
+   /* gap size between rows */
 }
 
 .w-2 img {
@@ -17,7 +19,7 @@
 
 .stats {
    font-family: 'Nasal';
-   font-size: 0.8rem;
-   line-height: 24px;
+   font-size: 0.9rem;
+   line-height: 20px;
    text-align: justify;
 }
