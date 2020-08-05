@@ -7,7 +7,7 @@
    /* splits the grid into 5 equal fractions going vertically */
    grid-column-gap: 50px;
    /* gap size between columns */
-   grid-row-gap: 10px;
+   grid-row-gap: 30px;
    /* gap size between rows */
 }
 
@@ -22,4 +22,43 @@
    font-size: 0.9rem;
    line-height: 20px;
    text-align: justify;
+}
+
+input {
+   margin-top: 20px;
+   width: 100%;
+   padding: 2%;
+   border: 2px solid #818181;
+   border-radius: 5px;
+   -webkit-transition: 0.5s;
+   transition: 0.5s;
+}
+
+input:focus, 
+textarea:focus {
+   outline: none !important;
+   border: 2px solid #000000;
+   border-radius: 5px;
+}
+
+textarea {
+   display: block;
+   margin-top: 20px;
+   width: 100%;
+   padding: 2%;
+   border: 2px solid #818181;
+   border-radius: 5px;
+   -webkit-transition: 0.5s;
+   transition: 0.5s;
+}
+
+label {
+   font-family: 'Nasal';
+   display: block;
+   margin-top: 50px;
+}
+
+legend {
+   font-family: 'Nasal';
+   font-size: 0.9rem;
 }
