@@ -1,17 +1,14 @@
 <?php
-   $name = $_POST['name'];
-   $visitor_email = $_POST['email'];
-   $message = $_POST['message'];
+   if(isset($_POST['submit'])) {
+      $name = $_POST['name'];
+      $mailFrom = $_POST['mail'];
+      $message = $_POST['message'];
 
-   $email_from = 
+      $mailTo = "jordan.belmont@hotmail.com";
+      $headers = "From: ".$mailFrom;
+      $txt = "You have received an E-mail from ".$name.".\n\n".$message;
 
-   $email_subject = "New Form Submission";
-
-   $email_body = "Contact Name: $name.\n".
-                  "Contact Email: $visitor_email.\n".
-                  "Message: $message.\n";
-
-
-
-
+      mail($mailTo, $txt, $headers);
+      header("Location: bio.html?mailsend");
+   }
 ?>
