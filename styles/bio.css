@@ -1,5 +1,5 @@
 .grid-bio {
-   margin: 50px 80px;
+   margin: 40px 80px;
    display: grid;
    grid-template-columns: repeat(5, 1fr);
    /* splits the grid into 5 equal fractions going horizontally */
@@ -25,7 +25,9 @@
 }
 
 h3 {
+   font-family: 'Nasal';
    font-size: 0.9rem;
+   font-weight: bold;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -40,6 +42,10 @@ h3:before {
    background: #CC339A;
 }
 
+.heading {
+   font-weight: bold;
+}
+
 .heading,
 .stats {
    display: inline;
@@ -52,6 +58,7 @@ h3:before {
 label {
    margin-top: 20px;
    display: block;
+   font-weight: bold;
 }
 
 .input-bar,
@@ -86,6 +93,7 @@ textarea:focus {
    border: 2px solid #818181;
    border-radius: 5px;
    font-family: 'Nasal';
+   font-weight: bold;
    background: none;
 }
 

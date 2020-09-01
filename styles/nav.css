@@ -21,7 +21,7 @@ nav {
    padding: 0px;
 }
 
-ul {
+nav ul {
    display: flex;
    flex-flow: row nowrap;
    justify-content: space-around;
@@ -29,6 +29,7 @@ ul {
 }
 
 li {
+   font-family: 'Nasal', sans-serif;
    height: 40px;
    display: flex;
    align-items: flex-end;
@@ -39,7 +40,6 @@ li {
    font-size: 1.1rem;
    font-weight: bold;
    text-transform: uppercase;
-   text-decoration: none;
    letter-spacing: 2px;
    position: relative;
    display: inline-block;

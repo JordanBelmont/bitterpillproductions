@@ -1,0 +1,97 @@
+.grid-blog {
+   margin: 40px 80px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   /* display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   /* splits the grid into 6 equal fractions going horizontally */
+   /* grid-template-rows: repeat(6, 26%); */
+   /* splits the grid into 6 equal fractions going vertically */
+   /* grid-column-gap: 50px; */
+   /* gap size between columns */
+   /* grid-row-gap: 40px; */
+   /* gap size between rows */
+}
+
+.blog-card {
+   margin-bottom: 50px;
+   padding: 40px 20px 20px 20px;
+   width: 75%;
+   box-shadow: 0 3px 7px -1px hsl(0, 0%, 20%);
+}
+
+.blog-background-1, .blog-background-2, .blog-background-3 {
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   padding: 180px;
+}
+
+.blog-background-1 {
+   background-image: url("../images/blog/Blog 1.jpg");
+}
+
+.blog-background-2 {
+   background-image: url("../images/blog/Blog 2.jpg");
+}
+
+.blog-background-3 {
+   background-image: url("../images/blog/Blog 3.jpg");
+}
+
+.blog-title {
+   font-size: 1.2rem;
+   font-weight: bold;
+   letter-spacing: 1px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 15px;
+   font-family: "Nasal";
+}
+
+.blog-time {
+   margin-top: 15px;
+   font-family: "Nasal";
+   font-weight: bold;
+}
+
+.blog-description {
+   margin-top: 15px;
+   font-family: "Nasal";
+   font-size: 0.9rem;
+}
+
+.read-more {
+   text-align: right;
+   font-weight: bold;
+   margin-top: 15px;
+}
+
+.read-more-link {
+   font-family: 'Nasal', sans-serif;
+   font-size: 1rem;
+   position: relative;
+   display: inline-block;
+   overflow: hidden;
+   /* Clips any content outside of the hyperlink during the hover transition */
+   background: linear-gradient(to right, #CC339A, #CC339A 50%, #000000 50%);
+   /* Creates a hard stop at 50% to the starting color and the color that it will change to */
+   background-clip: text;
+   /* Clips the gradient and the text value to display the text */
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-size: 200% 100%;
+   background-position: 100%;
+   /* have the starting color appear */
+   transition: background-position 0.7s ease-in;
+}
+
+.read-more-link:hover {
+   background-position: 0 100%;
+   /* have the link fill from left to right on hover */
+}
+
+

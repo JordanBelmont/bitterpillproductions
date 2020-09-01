@@ -1,9 +1,5 @@
-
-
-/* @media only screen and (min-width: 835px) { */
-
 .grid-gallery {
-   margin: 30px 60px;
+   margin: 40px 60px;
    display: grid;
    grid-template-columns: repeat(12, 1fr);
    /* splits the grid into 12 equal fractions going horizontally */
@@ -39,14 +35,16 @@
    filter: brightness(100%);
 }
 
-.gallery-item img:hover{
+.gallery-item img:hover {
    filter: brightness(40%);
    /* acts as substitute for an overlay - overlay gets in way of modal */
    transition: .3s ease-in-out;
 }
 
-.gallery-item .text1,
-.gallery-item .text2 {
+.gallery-item 
+.text1, 
+.gallery-item 
+.text2 {
    opacity: 0;
    /* ensures the text is invisible until hovered */
    position: absolute;
@@ -68,13 +66,16 @@
    /* centres text over image */
 }
 
-.gallery-item .text2 {
+.gallery-item 
+.text2 {
    top: 60%;
    font-size: 15px;
 }
 
-.gallery-item:hover .text1, 
-.gallery-item:hover .text2 {
+.gallery-item:hover 
+.text1, 
+.gallery-item:hover 
+.text2 {
    opacity: 1;
    /* ensures the text becomes visible on hover */
 }
