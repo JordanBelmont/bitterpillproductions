@@ -13,13 +13,18 @@
    box-shadow: 0 3px 7px -1px hsl(0, 0%, 20%);
 }
 
-.blog-background-1, .blog-background-2, .blog-background-3 {
+.blog-background-1, 
+.blog-background-2, 
+.blog-background-3,
+.blog-background-4,
+.blog-background-5,
+.blog-background-6
+{
    background-size: contain;
    background-repeat: no-repeat;
    background-position: center;
    padding: 180px;
 }
-
 
 .blog-background-6 {
    background-image: url("../images/blog/Blog-6.jpg");
@@ -30,7 +35,7 @@
 }
 
 .blog-background-4 {
-   background-image: url("../images/blog/Blog-4.jpg");
+   background-image: url("../images/blog/Blog-1.jpg");
 }
 
 .blog-background-3 {
@@ -46,9 +51,10 @@
 }
 
 .blog-title {
-   font-size: 1.2rem;
+   font-size: 1.5rem;
    font-weight: bold;
    letter-spacing: 1px;
+   text-transform: uppercase;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -60,21 +66,38 @@
    margin-top: 15px;
    font-family: "Nasal";
    font-weight: bold;
+   letter-spacing: 1px;
 }
 
-.blog-description {
+.blog-preview,
+.blog-copy {
    margin-top: 15px;
    font-family: "Nasal";
    font-size: 0.85rem;
    line-height: 20px;
    letter-spacing: 1px;
+}
+
+.blog-head {
+   font-family: "Nasal";
+   margin: 30px 0px;
+   font-weight: bold;
+   font-size: 1rem;
    line-height: 20px;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.blog-copy {
+   margin: 30px 0px 50px 0px;
 }
 
 .read-more {
    text-align: right;
    font-weight: bold;
    margin-top: 15px;
+   letter-spacing: 1px;
 }
 
 .read-more-link {
@@ -101,21 +124,12 @@
    /* have the link fill from left to right on hover */
 }
 
-.blog-head {
-   font-family: "Nasal";
-   margin-top: 15px;
-   font-weight: bold;
-   font-size: 0.85rem;
-   line-height: 20px;
-   letter-spacing: 1px;
+figure {
+   text-align: center;
 }
 
-.blog-body {
-   font-family: "Nasal";
-   margin-top: 15px;
-   font-size: 0.85rem;
-   line-height: 20px;
-   letter-spacing: 1px;
+.blog-image {
+   width: 100%;
 }
 
 
