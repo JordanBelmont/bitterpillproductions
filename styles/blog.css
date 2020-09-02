@@ -1,18 +1,9 @@
-.grid-blog {
+.blog-wrapper {
    margin: 40px 80px;
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   /* display: grid;
-   grid-template-columns: repeat(6, 1fr);
-   /* splits the grid into 6 equal fractions going horizontally */
-   /* grid-template-rows: repeat(6, 26%); */
-   /* splits the grid into 6 equal fractions going vertically */
-   /* grid-column-gap: 50px; */
-   /* gap size between columns */
-   /* grid-row-gap: 40px; */
-   /* gap size between rows */
 }
 
 .blog-card {
@@ -29,16 +20,29 @@
    padding: 180px;
 }
 
-.blog-background-1 {
-   background-image: url("../images/blog/Blog 1.jpg");
+
+.blog-background-6 {
+   background-image: url("../images/blog/Blog-6.jpg");
 }
 
-.blog-background-2 {
-   background-image: url("../images/blog/Blog 2.jpg");
+.blog-background-5 {
+   background-image: url("../images/blog/Blog-5.jpg");
+}
+
+.blog-background-4 {
+   background-image: url("../images/blog/Blog-4.jpg");
 }
 
 .blog-background-3 {
-   background-image: url("../images/blog/Blog 3.jpg");
+   background-image: url("../images/blog/Blog-3.jpg");
+}
+
+.blog-background-2 {
+   background-image: url("../images/blog/Blog-2.jpg");
+}
+
+.blog-background-1 {
+   background-image: url("../images/blog/Blog-1.jpg");
 }
 
 .blog-title {
@@ -61,7 +65,10 @@
 .blog-description {
    margin-top: 15px;
    font-family: "Nasal";
-   font-size: 0.9rem;
+   font-size: 0.85rem;
+   line-height: 20px;
+   letter-spacing: 1px;
+   line-height: 20px;
 }
 
 .read-more {
@@ -92,6 +99,23 @@
 .read-more-link:hover {
    background-position: 0 100%;
    /* have the link fill from left to right on hover */
+}
+
+.blog-head {
+   font-family: "Nasal";
+   margin-top: 15px;
+   font-weight: bold;
+   font-size: 0.85rem;
+   line-height: 20px;
+   letter-spacing: 1px;
+}
+
+.blog-body {
+   font-family: "Nasal";
+   margin-top: 15px;
+   font-size: 0.85rem;
+   line-height: 20px;
+   letter-spacing: 1px;
 }
 
 
