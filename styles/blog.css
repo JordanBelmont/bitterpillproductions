@@ -69,8 +69,7 @@
    letter-spacing: 1px;
 }
 
-.blog-preview,
-.blog-copy {
+.blog-preview {
    margin-top: 15px;
    font-family: "Nasal";
    font-size: 0.85rem;
@@ -80,31 +79,43 @@
 
 .blog-head {
    font-family: "Nasal";
-   margin: 30px 0px;
    font-weight: bold;
    font-size: 1rem;
    line-height: 20px;
    letter-spacing: 1px;
    text-transform: uppercase;
    text-align: center;
+   margin-top: 40px;
 }
 
-.blog-copy {
-   margin: 30px 0px 50px 0px;
-}
-
-.read-more {
-   text-align: right;
-   font-weight: bold;
-   margin-top: 15px;
+.blog-copy-intro {
+   margin-top: 20px;
+   font-family: "Nasal";
+   font-size: 0.85rem;
+   line-height: 20px;
    letter-spacing: 1px;
 }
 
-.read-more-link {
+.blog-copy {
+   margin-top: 20px;
+   font-family: "Nasal";
+   font-size: 0.85rem;
+   line-height: 20px;
+   letter-spacing: 1px;
+}
+
+.blog-image {
+   margin-top: 30px;
+}
+
+.read-more-link,
+.back-link {
+   float: right;
+   font-weight: bold;
+   margin-top: 15px;
+   letter-spacing: 1px;
    font-family: 'Nasal', sans-serif;
    font-size: 1rem;
-   position: relative;
-   display: inline-block;
    overflow: hidden;
    /* Clips any content outside of the hyperlink during the hover transition */
    background: linear-gradient(to right, #CC339A, #CC339A 50%, #000000 50%);
@@ -119,7 +130,8 @@
    transition: background-position 0.7s ease-in;
 }
 
-.read-more-link:hover {
+.read-more-link:hover,
+.back-link:hover {
    background-position: 0 100%;
    /* have the link fill from left to right on hover */
 }
@@ -128,8 +140,19 @@ figure {
    text-align: center;
 }
 
+figcaption {
+   margin-top: 5px;
+   font-family: "Nasal";
+   font-size: 0.75rem;
+   line-height: 20px;
+   letter-spacing: 1px;
+}
+
 .blog-image {
    width: 100%;
 }
 
-
+.test {
+   padding: 1px;
+   width: 100%;
+}
