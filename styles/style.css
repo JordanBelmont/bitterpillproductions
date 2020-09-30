@@ -1,10 +1,12 @@
 @import 'reset.css';
 @import 'index.css';
 @import 'typography.css';
+@import 'grid.css';
 @import 'nav.css';
 @import 'hero.css';
 @import 'gallery.css';
 @import 'lightbox.css';
+@import 'code.css';
 @import 'bio.css';
 @import 'blog.css';
 @import 'footer.css';

@@ -13,8 +13,8 @@
 }
 
 .hover-box {
-   width: 28vw;
-   height: 10vw;
+   width: 26vw;
+   height: 12vw;
    top: 32%;
    left: 36.2%;
    text-align: center;
@@ -30,27 +30,27 @@
 }
 
 .primary-top-header {
-   top: 33%;
-   left: 9.5%;
+   top: 28%;
+   left: 8%;
    pointer-events: none;
 }
 
 .primary-bottom-header {
-   top: 68%;
-   left: 18.5%;
+   top: 60%;
+   left: 18%;
    pointer-events: none;
 }
 
 .secondary-top-header {
-   top: 33%;
-   left: 18%;
+   top: 28%;
+   left: 12%;
    display: none;
    pointer-events: none;
 }
 
 .secondary-bottom-header {
-   top: 68%;
-   left: 18.5%;
+   top: 60%;
+   left: 4%;
    display: none;
    pointer-events: none;
 }

@@ -1,15 +1,15 @@
 .nav-container {
    text-align: center;
-   background-color: white;
-}
-
-.nav-container-gallery {
-   text-align: center;
    position: sticky;
    top: 0px;
    background-color: white;
    z-index: 5;
    /* ensure the nav bar is in front of every other element */
+}
+
+.nav-container-index {
+   text-align: center;
+   background-color: white;
 }
 
 .pill {
