@@ -4,9 +4,11 @@
    justify-content: center;
 }
 
-.icon {
+.icon-footer,
+.icon-code {
    width: 50px;
    margin: 0px 10px;
+   color: black;
 }
 
 .project-link {
@@ -15,3 +17,13 @@
    justify-content: center;
    margin-top: 20px;
 }
+
+.icon-footer:hover {
+   filter: invert(30%) sepia() saturate(1000%) hue-rotate(280deg) contrast(80%);
+}
+
+.icon-code:hover {
+   filter: invert(5%) sepia() saturate(1000%) hue-rotate(280deg) contrast(75%);
+}
+
+

@@ -62,3 +62,20 @@ li {
    /* have the link fill from left to right on hover */
 }
 
+.art-link,
+.copy-link,
+.code-link,
+.blog-link,
+.bio-link {
+   font-family: 'Nasal', sans-serif;
+   font-size: 1.1rem;
+   font-weight: bold;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   position: relative;
+   display: inline-block;
+   text-decoration: none;
+   color: #CC339A;
+}
+
+
