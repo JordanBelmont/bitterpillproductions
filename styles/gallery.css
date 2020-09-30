@@ -18,13 +18,6 @@
    /* allows for the image text to be placed relative to the image itself */
 }
 
-/* .gallery-item .image {
-   width: 100%;
-   height: 100%;
-   overflow: hidden;
-   display: block;
-} */
-
 .gallery-item img {
    width: 100%;
    height: 100%;

@@ -119,7 +119,7 @@
    font-size: 1rem;
    overflow: hidden;
    /* Clips any content outside of the hyperlink during the hover transition */
-   background: linear-gradient(to right, #CC339A, #CC339A 50%, #000000 50%);
+   background: linear-gradient(to right, #DA3CAC, #DA3CAC 50%, #000000 50%);
    /* Creates a hard stop at 50% to the starting color and the color that it will change to */
    background-clip: text;
    /* Clips the gradient and the text value to display the text */

@@ -57,8 +57,8 @@
 
 .hover-box:hover .secondary-top-header, .hover-box:hover .secondary-bottom-header {
    display: block;
-   color: #CC339A;
-   text-shadow: 1px 1px 10px #CC339A, 1px 1px 10px #CC339A;
+   color: #DA3CAC;
+   text-shadow: 1px 1px 10px #DA3CAC, 1px 1px 10px #DA3CAC;
 }
 
 .hover-box:hover .primary-top-header, .hover-box:hover .primary-bottom-header {
