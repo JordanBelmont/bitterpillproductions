@@ -17,13 +17,9 @@
    margin: 10px;
 }
 
-nav {
-   padding: 0px;
-}
-
 nav ul {
    display: flex;
-   flex-flow: row nowrap;
+   flex-flow: row;
    justify-content: space-around;
    padding-bottom: 20px;
 }
@@ -37,7 +33,7 @@ li {
 
 .nav-link {
    font-family: 'Nasal', sans-serif;
-   font-size: 1.1rem;
+   font-size: 17px;
    font-weight: bold;
    text-transform: uppercase;
    letter-spacing: 2px;

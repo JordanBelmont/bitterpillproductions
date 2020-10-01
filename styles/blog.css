@@ -11,7 +11,7 @@
    padding: 40px 20px 20px 20px;
    width: 75%;
    box-shadow: 0 3px 7px -1px hsl(0, 0%, 20%);
-   color: #2F2F2F;
+   color: #575757;
 }
 
 .blog-background-1, 
@@ -52,9 +52,9 @@
 }
 
 .blog-title {
-   font-size: 1.25rem;
+   font-size: 20px;
    font-weight: bold;
-   letter-spacing: 1px;
+   letter-spacing: 2px;
    text-transform: uppercase;
    display: flex;
    align-items: center;
@@ -67,13 +67,14 @@
    margin-top: 15px;
    font-family: "Nasal";
    font-weight: bold;
+   font-size: 16px;
    letter-spacing: 1px;
 }
 
 .blog-preview {
    margin-top: 15px;
    font-family: "Nasal";
-   font-size: 0.85rem;
+   font-size: 16px;
    line-height: 20px;
    letter-spacing: 1px;
 }
@@ -81,9 +82,9 @@
 .blog-head {
    font-family: "Nasal";
    font-weight: bold;
-   font-size: 1rem;
+   font-size: 18px;
    line-height: 20px;
-   letter-spacing: 1px;
+   letter-spacing: 2px;
    text-transform: uppercase;
    text-align: center;
    margin-top: 40px;
@@ -92,7 +93,7 @@
 .blog-copy-intro {
    margin-top: 20px;
    font-family: "Nasal";
-   font-size: 0.85rem;
+   font-size: 16px;
    line-height: 20px;
    letter-spacing: 1px;
 }
@@ -100,7 +101,7 @@
 .blog-copy {
    margin-top: 20px;
    font-family: "Nasal";
-   font-size: 0.85rem;
+   font-size: 16px;
    line-height: 20px;
    letter-spacing: 1px;
 }
@@ -119,7 +120,7 @@
    font-size: 1rem;
    overflow: hidden;
    /* Clips any content outside of the hyperlink during the hover transition */
-   background: linear-gradient(to right, #DA3CAC, #DA3CAC 50%, #000000 50%);
+   background: linear-gradient(to right, #DA3CAC, #DA3CAC 50%, #575757 50%);
    /* Creates a hard stop at 50% to the starting color and the color that it will change to */
    background-clip: text;
    /* Clips the gradient and the text value to display the text */
@@ -144,7 +145,7 @@ figure {
 figcaption {
    margin-top: 5px;
    font-family: "Nasal";
-   font-size: 0.75rem;
+   font-size: 13px;
    line-height: 20px;
    letter-spacing: 1px;
 }

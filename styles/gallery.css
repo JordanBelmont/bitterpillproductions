@@ -49,7 +49,8 @@
    color: #ffff;
    font-family: 'Nasal';
    letter-spacing: 2px;
-   font-size: 25px;
+   font-size: 20px;
+   font-weight: bold;
    pointer-events: none;
    /* stops text being selectable */
    z-index: 1;
