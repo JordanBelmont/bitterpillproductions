@@ -22,4 +22,16 @@
    src: url('../fonts/nasalization-rg.ttf') format('truetype')
 }
 
+@font-face {
+   font-family: 'mrsmonster';
+   font-weight: normal;
+   src: url('../fonts/mrsmonster.ttf') format('truetype')
+}
+
+@font-face {
+   font-family: 'coffee&tea';
+   font-weight: normal;
+   src: url('../fonts/coffee&tea.ttf') format('truetype')
+}
+
 
