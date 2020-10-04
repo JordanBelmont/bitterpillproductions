@@ -4,9 +4,9 @@ footer {
 }
 
 .foot {
+   padding: 10px;
    font-family: 'Nasal';
    font-size: 0.9rem;
-   color: #000000;
-   padding: 10px;
    letter-spacing: 1px;
+   color: #000000;
 }

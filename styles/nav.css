@@ -1,10 +1,9 @@
 .nav-container {
-   text-align: center;
+   z-index: 2;
    position: sticky;
+   text-align: center;
    top: 0px;
    background-color: white;
-   z-index: 5;
-   /* ensure the nav bar is in front of every other element */
 }
 
 .nav-container-index {
@@ -19,43 +18,29 @@
 
 nav ul {
    display: flex;
-   flex-flow: row;
+   flex-direction: row;
    justify-content: space-around;
    padding-bottom: 20px;
 }
 
 li {
-   font-family: 'Nasal', sans-serif;
-   height: 40px;
    display: flex;
    align-items: flex-end;
+   height: 40px;
 }
 
 .nav-link {
-   font-family: 'Nasal', sans-serif;
+   font-family: 'Nasal';
    font-size: 17px;
    font-weight: bold;
-   text-transform: uppercase;
+   text-decoration: none;
    letter-spacing: 2px;
-   position: relative;
-   display: inline-block;
-   overflow: hidden;
-   /* Clips any content outside of the hyperlink during the hover transition */
-   background: linear-gradient(to right, #DA3CAC, #DA3CAC 50%, #000000 50%);
-   /* Creates a hard stop at 50% to the starting color and the color that it will change to */
-   background-clip: text;
-   /* Clips the gradient and the text value to display the text */
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   background-size: 200% 100%;
-   background-position: 100%;
-   /* have the starting color appear */
-   transition: background-position 0.5s ease-in;
+   color: #000000;
 }
 
 .nav-link:hover {
-   background-position: 0 100%;
-   /* have the link fill from left to right on hover */
+   color: #DA3CAC;
+   transition: .3s ease-in-out;
 }
 
 .art-link,
@@ -63,15 +48,11 @@ li {
 .code-link,
 .blog-link,
 .bio-link {
-   font-family: 'Nasal', sans-serif;
-   font-size: 1.1rem;
-   font-weight: bold;
-   text-transform: uppercase;
-   letter-spacing: 2px;
-   position: relative;
    display: inline-block;
+   font-family: 'Nasal';
+   font-size: 17px;
+   font-weight: bold;
+   letter-spacing: 2px;
    text-decoration: none;
    color: #DA3CAC;
 }
-
-

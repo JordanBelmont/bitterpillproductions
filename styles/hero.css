@@ -4,33 +4,33 @@
 }
 
 .hero {
-   background-image: url("../images/Splash.jpg");
-   background-size: 100%;
-   background-repeat: no-repeat;
-   background-position: center;
-   padding: 30vw 0vw 25vw 0vw;
    position: relative;
+   padding: 30vw 0vw 25vw 0vw;
+   background-size: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-image: url("../images/Splash.jpg");
 }
 
 .hover-box {
-   width: 26vw;
-   height: 12vw;
-   top: 32%;
-   left: 36.2%;
-   text-align: center;
    position: absolute;
+   text-align: center;
+   width: 26vw;
+   height: 9vw;
+   top: 35%;
+   left: 36.2%;
 }
 
 [class*='header'] {
-   font-family: 'Virtualreality', sans-serif;
+   position: absolute;
+   font-family: 'Virtualreality';
    font-size: 2vw;
    color: #68E931;
-   position: absolute;
    text-shadow: 1px 1px 10px #68E931, 1px 1px 10px #68E931;
 }
 
 .primary-top-header {
-   top: 28%;
+   top: 20%;
    left: 8%;
    pointer-events: none;
 }
@@ -42,25 +42,27 @@
 }
 
 .secondary-top-header {
-   top: 28%;
-   left: 12%;
    display: none;
+   top: 20%;
+   left: 12%;
    pointer-events: none;
 }
 
 .secondary-bottom-header {
+   display: none;
    top: 60%;
    left: 4%;
-   display: none;
    pointer-events: none;
 }
 
-.hover-box:hover .secondary-top-header, .hover-box:hover .secondary-bottom-header {
+.hover-box:hover .secondary-top-header, 
+.hover-box:hover .secondary-bottom-header {
    display: block;
    color: #DA3CAC;
    text-shadow: 1px 1px 10px #DA3CAC, 1px 1px 10px #DA3CAC;
 }
 
-.hover-box:hover .primary-top-header, .hover-box:hover .primary-bottom-header {
+.hover-box:hover .primary-top-header, 
+.hover-box:hover .primary-bottom-header {
    display: none;
 }

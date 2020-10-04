@@ -1,34 +1,30 @@
 .grid-bio {
-   margin: 40px 80px;
    display: grid;
-   grid-template-columns: repeat(5, 1fr);
-   /* splits the grid into 5 equal fractions going horizontally */
-   grid-template-rows: repeat(5, 1fr);
-   /* splits the grid into 5 equal fractions going vertically */
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(4, 1fr);
    grid-column-gap: 50px;
-   /* gap size between columns */
    grid-row-gap: 40px;
-   /* gap size between rows */
+   margin: 40px 80px;
 }
 
 .profile-container {
-   font-family: 'Nasal';
-   font-size: 16px;
-   line-height: 20px;
-   letter-spacing: 1px;
-   color: #575757;
    text-align: justify;
    /* makes the paragraph end at the same spot on each line */
+   font-family: 'Nasal';
+   font-size: 16px;
+   letter-spacing: 1px;
+   line-height: 20px;
+   color: #575757;
 }
 
 .profile-title,
 .contact-title {
-   font-size: 20px;
-   font-weight: bold;
-   letter-spacing: 2px;
    display: flex;
    align-items: center;
    justify-content: center;
+   font-size: 20px;
+   font-weight: bold;
+   letter-spacing: 2px;
 }
 
 .profile-title:after, 
@@ -56,22 +52,22 @@
 }
 
 label {
-   margin-top: 20px;
    display: block;
+   margin-top: 20px;
    font-weight: bold;
 }
 
 .input-bar,
 textarea {
+   display: block;
    width: 100%;
    padding: 1%;
-   font-size: 16px;
-   letter-spacing: 1px;
    margin-top: 20px;
    border: 2px solid #818181;
    border-radius: 5px;
    font-family: monospace;
-   display: block;
+   font-size: 16px;
+   letter-spacing: 1px;
 }
 
 input:focus, 
@@ -91,10 +87,10 @@ textarea:focus {
    margin-top: 50px;
    border: 2px solid #818181;
    border-radius: 5px;
-   color: #575757;
    font-family: 'Nasal';
    font-weight: bold;
    letter-spacing: 1px;
+   color: #575757;
    background: none;
 }
 

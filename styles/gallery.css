@@ -1,75 +1,54 @@
 .grid-gallery {
-   margin: 40px 60px;
    display: grid;
    grid-template-columns: repeat(12, 1fr);
-   /* splits the grid into 12 equal fractions going horizontally */
    grid-template-rows: auto;
-   /* splits the grid into automated fractions based on content going horizontally */
    grid-column-gap: 65px;
-   /* gap size between columns */
    grid-row-gap: 45px;
-   /* gap size between rows */
+   margin: 40px 60px;
 }
 
 .gallery-item {
-   width: 100%;
-   height: 100%;
    position: relative;
    /* allows for the image text to be placed relative to the image itself */
 }
 
-.gallery-item img {
+.gallery-img {
    width: 100%;
-   height: 100%;
-   object-fit: fill;
-   object-position: 50% 50%;
    cursor: pointer;
-   transition: .3s ease-in-out;
-   filter: brightness(100%);
 }
 
-.gallery-item img:hover {
+.gallery-img:hover {
    filter: brightness(40%);
    /* acts as substitute for an overlay - overlay gets in way of modal */
    transition: .3s ease-in-out;
 }
 
-.gallery-item 
 .text1, 
-.gallery-item 
 .text2 {
-   opacity: 0;
-   /* ensures the text is invisible until hovered */
+   z-index: 1;
    position: absolute;
    top: 50%;
    left: 50%;
-   /* ensures text starts in the middle of the image */
-   transform: translate(-50%, -50%);
-   /* ensures text starts in the middle of the image */
-   color: #ffff;
+   text-align: center;
    font-family: 'Nasal';
-   letter-spacing: 2px;
    font-size: 20px;
    font-weight: bold;
+   letter-spacing: 2px;
+   color: #ffff;
+   opacity: 0;
    pointer-events: none;
-   /* stops text being selectable */
-   z-index: 1;
-   /* ensures the text is in front of the image */
+   transform: translate(-50%, -50%);
+   /* ensures text starts in the middle of the image */
    transition: .3s ease-in-out;
-   text-align: center;
-   /* centres text over image */
 }
 
-.gallery-item 
 .text2 {
    top: 60%;
    font-size: 15px;
 }
 
-.gallery-item:hover 
-.text1, 
-.gallery-item:hover 
-.text2 {
+.gallery-item:hover .text1, 
+.gallery-item:hover .text2 {
    opacity: 1;
    /* ensures the text becomes visible on hover */
 }

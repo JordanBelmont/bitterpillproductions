@@ -1,37 +1,32 @@
 .grid-code {
-   margin: 40px 60px;
    display: grid;
    grid-template-columns: repeat(5, 1fr);
-   /* splits the grid into 5 equal fractions going horizontally */
    grid-template-rows: repeat(4, 1fr);
-   /* splits the grid into 5 equal fractions going vertically */
-   grid-column-gap: 65px;
-   /* gap size between columns */
+   grid-column-gap: 20px;
    grid-row-gap: 40px;
-   /* gap size between rows */
+   margin: 40px 60px;
    background-color: #ececec;
    box-shadow: 0 3px 7px -1px hsl(0, 0%, 20%);
 }
 
 .code-container {
+   padding: 20px;
+   text-align: justify;
    font-family: 'Nasal';
    font-size: 16px;
-   line-height: 20px;
    letter-spacing: 1px;
-   text-align: justify;
-   color: #494949;
-   padding: 20px;
+   line-height: 20px;
+   color: #575757;
 }
 
 .code-title {
-   font-family: 'Nasal';
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 10px;
    font-size: 20px;
    font-weight: bold;
    letter-spacing: 2px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   margin-top: 10px;
 }
 
 .code-image-container {
@@ -44,12 +39,12 @@
    filter: brightness(100%);
 }
 
-.code-image-container img {
-      width: 100%;
-      object-fit: fit-content;
+.code-image {
+   width: 100%;
+   object-fit: fit-content;
 }
 
-.code-image-container img:hover {
+.code-image:hover {
    filter: brightness(40%);
    /* acts as substitute for an overlay - overlay gets in way of modal */
    transition: .3s ease-in-out;

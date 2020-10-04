@@ -1,11 +1,11 @@
 #lightbox {
+   z-index: 3;
+   display: none;
    position: fixed;
-   z-index: 1000;
    top: 0;
    width: 100%;
    height: 100%;
    background-color: rgba(0, 0, 0, .8);
-   display: none;
 }
 
 #lightbox.active {
@@ -18,6 +18,6 @@
    max-width: 95%;
    max-height: 95%;
    padding: 4px;
-   background-color: black;
-   border: 2px solid white;
+   border: 2px solid #ffffff;
+   background-color: #000000;
 }

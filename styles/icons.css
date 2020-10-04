@@ -20,10 +20,12 @@
 
 .icon-footer:hover {
    filter: invert(30%) sepia() saturate(1000%) hue-rotate(280deg) contrast(80%);
+   transition: .3s ease-in-out;
 }
 
 .icon-code:hover {
    filter: invert(5%) sepia() saturate(1000%) hue-rotate(280deg) contrast(75%);
+   transition: .3s ease-in-out;
 }
 
 
