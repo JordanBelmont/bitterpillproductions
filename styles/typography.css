@@ -22,4 +22,10 @@
    src: url('../fonts/coffee&tea.ttf') format('truetype')
 }
 
+@font-face {
+   font-family: 'carosello';
+   font-weight: normal;
+   src: url('../fonts/Carosello-Regular.otf') format('opentype')
+}
+
 

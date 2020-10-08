@@ -3,30 +3,53 @@
 
 <head>
    <meta charset="utf-8">
-   <meta name="websitedescription" content="test">
-   <meta http-equiv="imagetoolbar" content="no" />
+   <meta name="The Eldritch 8-Ball" content="test">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta http-equiv="x-ua-compatible" content="ie=edge">
    <link rel="stylesheet" href="styles/style.css">
    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-   <script defer src="javascript/script.js"></script>
-   <title>Ask-Sathoth: Magic 8-Ball</title>
+   <script defer src="/javascript/askSothoth.js"></script>
+   <title>Ask-Sothoth: The Magic 8-Ball</title>
 </head>
 
-<body>
-   <div class="nav-containe"'>
+<body class="sothoth-body">
+   <div class="nav-container">
       <a href="index.html">
          <img class="pill" src="images/bitterpill-logo.png" alt="bitter pill logo">
       </a>
       <nav>
          <ul>
             <li><a class="nav-link" href="art.html">ART</a></li>
-            <li><a class="nav-link" href="code.html">CODE</a></li>
+            <li><a class="code-link" href="code.html">CODE</a></li>
             <li><a class="nav-link" href="copy.html">COPY</a></li>
             <li><a class="nav-link" href="blog.html">BLOG</a></li>
-            <li><a class="bio-link" href="bio.html">BIO</a></li>
+            <li><a class="nav-link" href="bio.html">BIO</a></li>
          </ul>
       </nav>
+   </div>
+
+   <div class="sothoth-display">
+      <picture class="sothoth-image-container w-1 h-4">
+         <img src="images/code-images/ask-sothoth/ask-sothoth.png" alt="the sigil of Yog-Sothoth" class="sothoth-image" />
+      </picture>
+
+      <div class="sothoth-title-container">
+         <img class="sothoth-title" src="images/code-images/ask-sothoth/title.png" alt="Ask-Sothoth Title"/>
+      </div>
+
+      <div class="sothoth-slogan-container">
+         <p class="sothoth-key">The <span class="sothoth-span">KEY,</span></p>
+         <p class="sothoth-guardian"><span class="sothoth-span">GUARDIAN,</span> and</p>
+         <p class="sothoth-gate"><span class="sothoth-span">GATE</span> to knowledge!</p>
+      </div>
+
+      <form class="sothoth-form" id="sothothForm">
+            <input class="sothoth-input" id="input" type="text" name="question" placeholder="Your Question"/>
+      </form>
+
+      <div class="sothoth-answer-container">
+         <p class="sothoth-answer" id="sothothAnswer"></p>
+      </div>
    </div>
 
    <footer>
