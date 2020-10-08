@@ -1,5 +1,3 @@
-// ANSWERS INPUT
-
 const store = {}
 let answers = [
    "Indubitably",
@@ -22,8 +20,8 @@ let answers = [
    "That's going to be a 'no'"
 ];
 
-document.getElementById('sathoth-form').addEventListener('submit', function () {
-   let question = document.getElementById("sathoth-input").value
+document.getElementById("sothothForm").addEventListener("submit", function (event) {
+   let question = document.getElementById("input").value
    if (input.value.length < 1) {
       alert("Enter a question");
       return;
@@ -31,7 +29,7 @@ document.getElementById('sathoth-form').addEventListener('submit', function () {
       const number = store[question] || Math.floor(Math.random() * 15)
       store[question] = number
       event.preventDefault();
-      document.getElementById("sathoth-answer").textContent = answers[number]
+      document.getElementById("sothothAnswer").textContent = answers[number]
    } else {
       alert("Use a question mark at the end of the question")
       event.preventDefault();
@@ -40,13 +38,10 @@ document.getElementById('sathoth-form').addEventListener('submit', function () {
 
 // PREVENT NUMBER INPUT
 
-document.getElementById('form').onkeypress = function (e) {
-   e = e || window.event;
-   var charCode = (typeof e.which == "undefined") ? e.keyCode : e.which;
-   var charStr = String.fromCharCode(charCode);
-   if (/\d/.test(charStr)) {
-      return false;
-   }
-};
+document.getElementById("sothothForm").addEventListener("keydown", e => {
+	if (e.key.match(/\d/)) {
+		e.preventDefault();
+	}
+});
 
 

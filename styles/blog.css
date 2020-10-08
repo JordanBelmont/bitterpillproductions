@@ -109,39 +109,29 @@
    margin-top: 30px;
 }
 
-.read-more-link,
-.back-link {
+.blog-read-more,
+.blog-back {
    float: right;
    margin-top: 15px;
    font-family: 'Nasal';
-   font-size: 1rem;
+   font-size: 16px;
    font-weight: bold;
+   text-decoration: none;
    letter-spacing: 1px;
-   overflow: hidden;
-   /* Clips any content outside of the hyperlink during the hover transition */
-   background: linear-gradient(to right, #DA3CAC, #DA3CAC 50%, #575757 50%);
-   /* Creates a hard stop at 50% to the starting color and the color that it will change to */
-   background-clip: text;
-   /* Clips the gradient and the text value to display the text */
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   background-size: 200% 100%;
-   background-position: 100%;
-   /* have the starting color appear */
-   transition: background-position 0.7s ease-in;
+   color: #575757;
 }
 
-.read-more-link:hover,
-.back-link:hover {
-   background-position: 0 100%;
-   /* have the link fill from left to right on hover */
+.blog-read-more:hover,
+.blog-back:hover {
+   color: #DA3CAC;
+   transition: .3s ease-in-out;
 }
 
-figure {
+.blog-figure {
    text-align: center;
 }
 
-figcaption {
+.blog-figcaption {
    margin-top: 5px;
    font-family: "Nasal";
    font-size: 13px;
@@ -151,9 +141,4 @@ figcaption {
 
 .blog-image {
    width: 100%;
-}
-
-.test {
-   width: 100%;
-   padding: 1px;
 }

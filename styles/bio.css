@@ -1,4 +1,4 @@
-.grid-bio {
+.bio-grid {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    grid-template-rows: repeat(4, 1fr);
@@ -7,7 +7,7 @@
    margin: 40px 80px;
 }
 
-.profile-container {
+.bio-profile-container {
    text-align: justify;
    /* makes the paragraph end at the same spot on each line */
    font-family: 'Nasal';
@@ -17,8 +17,8 @@
    color: #575757;
 }
 
-.profile-title,
-.contact-title {
+.bio-profile-title,
+.bio-contact-title {
    display: flex;
    align-items: center;
    justify-content: center;
@@ -27,10 +27,10 @@
    letter-spacing: 2px;
 }
 
-.profile-title:after, 
-.profile-title:before,
-.contact-title:after,
-.contact-title:before {
+.bio-profile-title:after, 
+.bio-profile-title:before,
+.bio-contact-title:after,
+.bio-contact-title:before {
    content: '';
    width: 150px;
    height: 2px;
@@ -38,27 +38,27 @@
    background: #DA3CAC;
 }
 
-.heading {
+.bio-heading {
    font-weight: bold;
 }
 
-.heading,
-.stats {
+.bio-heading,
+.bio-stats-prof {
    display: inline;
 }
 
-.prof {
+.bio-stats-prof {
    padding-left: 20px;
 }
 
-label {
+.bio-label {
    display: block;
    margin-top: 20px;
    font-weight: bold;
 }
 
-.input-bar,
-textarea {
+.bio-input,
+.bio-textarea {
    display: block;
    width: 100%;
    padding: 1%;
@@ -70,18 +70,18 @@ textarea {
    letter-spacing: 1px;
 }
 
-input:focus, 
-textarea:focus {
+.bio-input:focus, 
+.bio-textarea:focus {
    border: 2px solid #000000;
    border-radius: 5px;
    outline: none;
 }
 
-.submit-container {
+.bio-submit-container {
    text-align: center;
 }
 
-.submit-button {
+.bio-submit-button {
    width: 20%;
    padding: 10px;
    margin-top: 50px;
@@ -94,11 +94,19 @@ textarea:focus {
    background: none;
 }
 
-.submit-button:hover {
+.bio-submit-button:hover {
    cursor: pointer;
 }
 
-.bio-image-container img {
+.bio-submit-button:focus {
+   border: 2px solid #000000;
+   border-radius: 5px;
+   outline: none;
+}
+
+
+
+.bio-image {
    width: 32vw;
    max-height: 100%;
    object-fit: cover;

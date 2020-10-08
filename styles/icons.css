@@ -1,29 +1,30 @@
-.icon-wrapper {
+.foot-icon-wrapper,
+.code-icon-wrapper {
    display: flex;
    flex-direction: row;
    justify-content: center;
 }
 
-.icon-footer,
-.icon-code {
+.foot-icon,
+.code-icon {
    width: 50px;
    margin: 0px 10px;
    color: black;
 }
 
-.project-link {
+.code-icon-link {
    display: flex;
    flex-direction: row;
    justify-content: center;
    margin-top: 20px;
 }
 
-.icon-footer:hover {
+.foot-icon:hover {
    filter: invert(30%) sepia() saturate(1000%) hue-rotate(280deg) contrast(80%);
    transition: .3s ease-in-out;
 }
 
-.icon-code:hover {
+.code-icon:hover {
    filter: invert(5%) sepia() saturate(1000%) hue-rotate(280deg) contrast(75%);
    transition: .3s ease-in-out;
 }

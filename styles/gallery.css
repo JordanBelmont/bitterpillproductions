@@ -1,4 +1,4 @@
-.grid-gallery {
+.gallery-grid {
    display: grid;
    grid-template-columns: repeat(12, 1fr);
    grid-template-rows: auto;
@@ -12,19 +12,19 @@
    /* allows for the image text to be placed relative to the image itself */
 }
 
-.gallery-img {
+.gallery-image {
    width: 100%;
    cursor: pointer;
 }
 
-.gallery-img:hover {
+.gallery-image:hover {
    filter: brightness(40%);
    /* acts as substitute for an overlay - overlay gets in way of modal */
    transition: .3s ease-in-out;
 }
 
-.text1, 
-.text2 {
+.gallery-text1, 
+.gallery-text2 {
    z-index: 1;
    position: absolute;
    top: 50%;
@@ -42,13 +42,13 @@
    transition: .3s ease-in-out;
 }
 
-.text2 {
+.gallery-text2 {
    top: 60%;
    font-size: 15px;
 }
 
-.gallery-item:hover .text1, 
-.gallery-item:hover .text2 {
+.gallery-item:hover .gallery-text1, 
+.gallery-item:hover .gallery-text2 {
    opacity: 1;
    /* ensures the text becomes visible on hover */
 }

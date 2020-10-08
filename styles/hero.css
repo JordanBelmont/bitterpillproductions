@@ -21,7 +21,8 @@
    left: 36.2%;
 }
 
-[class*='header'] {
+.primary-top-header,
+.primary-bottom-header {
    position: absolute;
    font-family: 'Virtualreality';
    font-size: 2vw;
@@ -58,6 +59,9 @@
 .hover-box:hover .secondary-top-header, 
 .hover-box:hover .secondary-bottom-header {
    display: block;
+   position: absolute;
+   font-family: 'Virtualreality';
+   font-size: 2vw;
    color: #DA3CAC;
    text-shadow: 1px 1px 10px #DA3CAC, 1px 1px 10px #DA3CAC;
 }

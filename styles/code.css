@@ -1,4 +1,4 @@
-.grid-code {
+.code-grid {
    display: grid;
    grid-template-columns: repeat(5, 1fr);
    grid-template-rows: repeat(4, 1fr);
@@ -37,6 +37,19 @@
    cursor: pointer;
    transition: .3s ease-in-out;
    filter: brightness(100%);
+}
+
+.code-heading {
+   font-weight: bold;
+}
+
+.code-heading,
+.code-stats-prof {
+   display: inline;
+}
+
+.code-stats-prof {
+   padding-left: 20px;
 }
 
 .code-image {

@@ -1,19 +1,7 @@
 @font-face {
-   font-family: 'Virtualreality';
+   font-family: 'VirtualReality';
    font-weight: normal;
    src: url('../fonts/VirtualReality-Regular.ttf') format('truetype')
-}
-
-@font-face {
-   font-family: 'CodeBold';
-   font-weight: normal;
-   src: url('../fonts/Code_/CODE-Bold.otf') format('opentype')
-}
-
-@font-face {
-   font-family: 'CodeLight';
-   font-weight: normal;
-   src: url('../fonts/Code_/CODE-Light.otf') format('opentype')
 }
 
 @font-face {
