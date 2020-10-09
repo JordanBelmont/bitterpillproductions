@@ -1,4 +1,4 @@
-const store = {}
+let store = {}
 let answers = [
    "Indubitably",
    "Yes, at a price",
@@ -26,7 +26,7 @@ document.getElementById("sothothForm").addEventListener("submit", function (even
       alert("Enter a question");
       return;
    } if (question.indexOf("?") != -1) {
-      const number = store[question] || Math.floor(Math.random() * 15)
+      let number = store[question] || Math.floor(Math.random() * 15)
       store[question] = number
       event.preventDefault();
       document.getElementById("sothothAnswer").textContent = answers[number]
@@ -39,9 +39,27 @@ document.getElementById("sothothForm").addEventListener("submit", function (even
 // PREVENT NUMBER INPUT
 
 document.getElementById("sothothForm").addEventListener("keydown", e => {
-	if (e.key.match(/\d/)) {
-		e.preventDefault();
-	}
+   if (e.key.match(/\d/)) {
+      e.preventDefault();
+   }
 });
 
+// AUDIO ON SUBMIT
 
+let audioSources = [
+   "audio/ask-sothoth/voice1.mp3",
+   "audio/ask-sothoth/voice2.mp3",
+   "audio/ask-sothoth/voice3.mp3",
+   "audio/ask-sothoth/voice4.mp3",
+   "audio/ask-sothoth/voice5.mp3",
+   "audio/ask-sothoth/voice6.mp3",
+   "audio/ask-sothoth/voice7.mp3",
+];
+
+
+document.getElementById("sothothForm").addEventListener("submit", function play() {
+   let audio = document.getElementById("audio")
+   let audioSource = audioSources[Math.floor(Math.random() * audioSources.length)];
+   audio.src = audioSource;
+   audio.play();
+});
