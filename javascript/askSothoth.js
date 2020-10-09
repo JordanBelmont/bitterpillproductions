@@ -59,7 +59,7 @@ document.getElementById("sothothForm").addEventListener("submit", function play(
    if (question.indexOf("?") === -1) {
       return;
    } else {
-      let audio = document.getElementById("audio")
+      let audio = document.getElementById("sothothAudio")
       let audioSource = audioSources[Math.floor(Math.random() * 11)];
       audio.src = audioSource;
       audio.play();
