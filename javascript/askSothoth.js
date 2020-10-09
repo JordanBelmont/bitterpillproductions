@@ -1,3 +1,5 @@
+// ANSWERS ON SUBMIT
+
 let store = {}
 let answers = [
    "Indubitably",
@@ -21,26 +23,18 @@ let answers = [
 ];
 
 document.getElementById("sothothForm").addEventListener("submit", function (event) {
-   let question = document.getElementById("input").value
+   let question = document.getElementById("input").value;
    if (input.value.length < 1) {
       alert("Enter a question");
       return;
    } if (question.indexOf("?") != -1) {
-      let number = store[question] || Math.floor(Math.random() * 15)
+      let number = store[question] || Math.floor(Math.random() * 18)
       store[question] = number
       event.preventDefault();
       document.getElementById("sothothAnswer").textContent = answers[number]
    } else {
       alert("Use a question mark at the end of the question")
       event.preventDefault();
-   }
-});
-
-// PREVENT NUMBER INPUT
-
-document.getElementById("sothothForm").addEventListener("keydown", e => {
-   if (e.key.match(/\d/)) {
-      e.preventDefault();
    }
 });
 
@@ -54,12 +48,28 @@ let audioSources = [
    "audio/ask-sothoth/voice5.mp3",
    "audio/ask-sothoth/voice6.mp3",
    "audio/ask-sothoth/voice7.mp3",
+   "audio/ask-sothoth/voice8.mp3",
+   "audio/ask-sothoth/voice9.mp3",
+   "audio/ask-sothoth/voice10.mp3",
+   "audio/ask-sothoth/voice11.mp3"
 ];
 
-
 document.getElementById("sothothForm").addEventListener("submit", function play() {
-   let audio = document.getElementById("audio")
-   let audioSource = audioSources[Math.floor(Math.random() * audioSources.length)];
-   audio.src = audioSource;
-   audio.play();
+   let question = document.getElementById("input").value;
+   if (question.indexOf("?") === -1) {
+      return;
+   } else {
+      let audio = document.getElementById("audio")
+      let audioSource = audioSources[Math.floor(Math.random() * 11)];
+      audio.src = audioSource;
+      audio.play();
+   }
+});
+
+// PREVENT NUMBER INPUT
+
+document.getElementById("sothothForm").addEventListener("keydown", event => {
+   if (event.key.match(/\d/)) {
+      event.preventDefault();
+   }
 });

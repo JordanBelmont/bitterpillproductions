@@ -112,6 +112,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 30% 28% 10% 32%;
+      margin: 40px 60px;
    }
 
    .sothoth-image-container {
@@ -129,9 +130,9 @@
    }
 
    .sothoth-title {
-      width: 45%;
-      top: 150px;
-      right: 200px;
+      width: 40%;
+      top: 190px;
+      right: 210px;
       position: absolute;
    }
 
@@ -140,16 +141,16 @@
    }
 
    .sothoth-slogan-container p {
-      font-size: 2.5vw;
-      line-height: 3vw;
+      font-size: 2vw;
+      line-height: 2.5vw;
    }
 
    .sothoth-span {
-      font-size: 3.5vw;
+      font-size: 3vw;
    }
    
    .sothoth-key {
-      text-indent: -65%;
+      text-indent: -60%;
       margin-top: 30px;
    }
    
@@ -193,12 +194,13 @@
       display: flex;
       justify-content: center;
       text-align: center;
-      margin-right: 22%;
+      margin-right: 24%;
+      margin-top: 0px;
    }
 
    .sothoth-answer {
       letter-spacing: 2px;
-      font-size: 4vw;
+      font-size: 3.5vw;
       padding: 45px;
    }
 }
