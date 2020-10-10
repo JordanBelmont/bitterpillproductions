@@ -1,7 +1,10 @@
 // PLAY AUDIO ON LOAD
 
 window.onload = function() {
-   document.getElementById("my_audio").play();
+   audio.volume = 0.2;
+   document.getElementById("my_audio")
+   audio.volume = 0.2;
+   audio.play();
 }
 
 // PLAY AUDIO ON CLICK
