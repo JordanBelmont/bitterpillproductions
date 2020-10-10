@@ -61,6 +61,7 @@ document.getElementById("sothothForm").addEventListener("submit", function play(
    } else {
       let audio = document.getElementById("sothothAudio")
       let audioSource = audioSources[Math.floor(Math.random() * 11)];
+      audio.volume = 0.2;
       audio.src = audioSource;
       audio.play();
    }

@@ -1,14 +1,13 @@
-// PLAY AUDIO ON LOAD
-
-window.onload = function() {
-   audio.volume = 0.2;
-   document.getElementById("my_audio")
-   audio.volume = 0.2;
-   audio.play();
-}
-
 // PLAY AUDIO ON CLICK
 
-document.getElementById("coinSlot").addEventListener("onClick", function play() {
-   audio.play();
+document.getElementById("coinSlot").addEventListener("click", function play() {
+   let coin = document.getElementById("coin");
+   let whisper = document.getElementById("whisper");
+   coin.volume = 0.3;
+   coin.play();
+   setTimeout(function () { 
+      whisper.volume = 0.2;
+      whisper.play(); 
+   }, 2700)
 });
+
