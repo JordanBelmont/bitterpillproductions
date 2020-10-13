@@ -10,26 +10,46 @@
    <link rel='apple-touch-icon' href='apple-touch-icon.png'>
    <link rel='stylesheet' href='styles/style.css'>
    <script defer src='/javascript/yashana.js'></script>
+   <script defer src="javascript/burger.js"></script>
    <title>Yashana: The Oracle</title>
 </head>
 
-<body class=>
-   <div class="nav-container">
-      <a href="index.html">
-         <img class="pill" src="images/bitterpill-logo.png" alt="bitter pill logo">
-      </a>
-      <nav>
-         <ul>
-            <li><a class="nav-link" href="art.html">ART</a></li>
-            <li><a class="code-link" href="code.html">CODE</a></li>
-            <li><a class="nav-link" href="copy.html">COPY</a></li>
-            <li><a class="nav-link" href="blog.html">BLOG</a></li>
-            <li><a class="nav-link" href="bio.html">BIO</a></li>
-         </ul>
-      </nav>
-   </div>
+<body>
+   <nav class="desktop-nav">
+      <ul class="desktop-ul">
+         <li><a class="art-link" href="art.html">ART</a></li>
+         <li><a class="nav-link" href="code.html">CODE</a></li>
+         <li><a class="nav-link" href="copy.html">COPY</a></li>
+         <li><a class="nav-link" href="blog.html">BLOG</a></li>
+         <li><a class="nav-link" href="bio.html">BIO</a></li>
+      </ul>
+   </nav>
+
+   <button class="burger" id='burger'>
+      <svg viewBox="0 0 100 80" width="40" height="40">
+         <rect width="100" height="20"></rect>
+         <rect y="30" width="100" height="20"></rect>
+         <rect y="60" width="100" height="20"></rect>
+      </svg>
+   </button>
+
+   <nav class='phone-nav' id='navBurger'>
+      <ul class="phone-ul">
+         <li><a class="nav-link" href="art.html">ART</a></li>
+         <li><a class="code-link" href="code.html">CODE</a></li>
+         <li><a class="nav-link" href="copy.html">COPY</a></li>
+         <li><a class="nav-link" href="blog.html">BLOG</a></li>
+         <li><a class="nav-link" href="bio.html">BIO</a></li>
+      </ul>
+   </nav>
+   </header>
 
    <div class="coin-slot" id="coinSlot"></div>
+
+   <div class="fortune-container">
+      <p class="fortune" id="fortune"></p>
+   </div>
+
    <audio id="whisper" src="audio/yashana/whispers.mp3"></audio>
    <audio id="coin" src="audio/yashana/coin.mp3"></audio>
 

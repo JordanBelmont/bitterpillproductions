@@ -9,17 +9,17 @@
    <meta http-equiv="x-ua-compatible" content="ie=edge">
    <link rel="stylesheet" href="styles/style.css">
    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-   <script defer src="javascript/script.js"></script>
+   <script defer src="javascript/burger.js"></script>
    <title>Bitter Pill Productions: Blog</title>
 </head>
 
 <body>
-   <div class="nav-container">
+   <header>
       <a href="index.html">
          <img class="pill" src="images/bitterpill-logo.png" alt="bitter pill logo">
       </a>
-      <nav>
-         <ul>
+      <nav class="desktop-nav">
+         <ul class="desktop-ul">
             <li><a class="nav-link" href="art.html">ART</a></li>
             <li><a class="nav-link" href="code.html">CODE</a></li>
             <li><a class="nav-link" href="copy.html">COPY</a></li>
@@ -27,7 +27,25 @@
             <li><a class="nav-link" href="bio.html">BIO</a></li>
          </ul>
       </nav>
-   </div>
+
+      <button class="burger" id='burger'>
+         <svg viewBox="0 0 100 80" width="40" height="40">
+            <rect width="100" height="20"></rect>
+            <rect y="30" width="100" height="20"></rect>
+            <rect y="60" width="100" height="20"></rect>
+         </svg>
+      </button>
+
+      <nav class='phone-nav' id='navBurger'>
+         <ul class="phone-ul">
+            <li><a class="nav-link" href="art.html">ART</a></li>
+            <li><a class="nav-link" href="code.html">CODE</a></li>
+            <li><a class="nav-link" href="copy.html">COPY</a></li>
+            <li><a class="blog-link" href="blog.html">BLOG</a></li>
+            <li><a class="nav-link" href="bio.html">BIO</a></li>
+         </ul>
+      </nav>
+   </header>
 
    <div class="blog-wrapper">
       <div class="blog-card" id="blogCard6">

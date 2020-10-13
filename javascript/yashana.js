@@ -7,7 +7,7 @@ document.getElementById("coinSlot").addEventListener("click", function play() {
    coin.play();
    setTimeout(function () { 
       whisper.volume = 0.2;
-      whisper.play(); 
+      whisper.play();
    }, 2700)
 });
 
