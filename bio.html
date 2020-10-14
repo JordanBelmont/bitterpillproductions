@@ -18,8 +18,8 @@
       <a href="index.html">
          <img class="pill" src="images/bitterpill-logo.png" alt="bitter pill logo">
       </a>
-      <nav class="desktop-nav">
-         <ul class="desktop-ul">
+      <nav id=navBurger>
+         <ul class="nav-ul">
             <li><a class="nav-link" href="art.html">ART</a></li>
             <li><a class="nav-link" href="code.html">CODE</a></li>
             <li><a class="nav-link" href="copy.html">COPY</a></li>
@@ -27,7 +27,6 @@
             <li><a class="bio-link" href="bio.html">BIO</a></li>
          </ul>
       </nav>
-
       <button class="burger" id='burger'>
          <svg viewBox="0 0 100 80" width="40" height="40">
             <rect width="100" height="20"></rect>
@@ -35,24 +34,14 @@
             <rect y="60" width="100" height="20"></rect>
          </svg>
       </button>
-
-      <nav class='phone-nav' id='navBurger'>
-         <ul class="phone-ul">
-            <li><a class="nav-link" href="art.html">ART</a></li>
-            <li><a class="nav-link" href="code.html">CODE</a></li>
-            <li><a class="nav-link" href="copy.html">COPY</a></li>
-            <li><a class="nav-link" href="blog.html">BLOG</a></li>
-            <li><a class="bio-link" href="bio.html">BIO</a></li>
-         </ul>
-      </nav>
    </header>
 
-   <div class="bio-grid">
-      <div class="bio-profile-container w-2 h-2">
-         <div class="bio-profile-title">
-            <h1 class="bio-profile">PROFILE</h1>
-         </div>
-         <br><br>
+   <div class="bio-display">
+      <div class="bio-profile-title-container w-2 h-1">
+         <h1 class="bio-profile-title">PROFILE</h1>
+      </div>
+
+      <div class="bio-profile-container w-2 h-1">
          <h2 class="bio-heading">NAME:</h2>
          <p class="bio-stats-prof">Jordan Belmont</p>
          <br><br>
@@ -80,20 +69,21 @@
          </p>
       </div>
 
-      <div class="bio-image-container w-1 h-2">
+      <div class="bio-image-container1 w-1 h-2">
          <img class="bio-image" src="images/bio/Profile1.png" alt="bio picture 1">
       </div>
 
-      <div class="bio-profile-container w-2 h-2">
+      <div class="bio-contact-title-container w-2 w-1">
+         <h1 class="bio-contact-title">CONTACT ME</h1>
+      </div>
+
+      <div class="bio-contact-container w-2 h-1">
          <form class="bio-contact-form" id="contactForm" method="POST" action="contact-form.php">
-            <div class="bio-contact-title">
-               <h1 class="bio-contact">CONTACT ME</h1>
-            </div>
-            <label class="bio-label" for="inputname">FULL NAME</label>
+            <label class="bio-label full-name" for="inputname">FULL NAME</label>
             <input class="bio-input" id="inputName" type="name" name="name" required />
-            <label class="bio-label" for="inputemail">E-MAIL ADDRESS</label>
+            <label class="bio-label address" for="inputemail">E-MAIL ADDRESS</label>
             <input class="bio-input" id="inputEmail" type="email" name="email" pattern=".+@globex.com" required />
-            <label class="bio-label" for="message">MESSAGE</label>
+            <label class="bio-label message" for="message">MESSAGE</label>
             <textarea class="bio-textarea" id="message" name="text" rows="10" cols="33" required></textarea>
             <div class="bio-submit-container">
                <input class="bio-submit-button" type="submit" value="SEND" />
@@ -101,14 +91,14 @@
          </form>
       </div>
 
-      <div class="bio-image-container w-1 h-2">
+      <div class="bio-image-container2 w-1 h-2">
          <img class="bio-image" src="images/bio/Profile2.png" alt="bio picture 2">
       </div>
    </div>
 
    <footer>
-      <p class="foot">For all your creative aches and pains</p>
-      <div class="foot-icon-wrapper">
+      <p class="foot-text">For all your creative aches and pains</p>
+      <div class="foot-icon-container">
          <a href="https://twitter.com/BitterPillProd2" target="_blank" class="foot-icon-link">
             <img class="foot-icon" src="/icons/twitter.svg" alt="twitter icon" title="Twitter">
          </a>
@@ -122,7 +112,7 @@
             <img class="foot-icon" src="/icons/github.svg" alt="github icon" title="Github">
          </a>
       </div>
-      <p class="foot">&copy;2020 - Bitter Pill Productions</p>
+      <p class="foot-text">&copy;2020 - Bitter Pill Productions</p>
    </footer>
 </body>
 

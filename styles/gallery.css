@@ -1,8 +1,10 @@
-.gallery-grid {
+/* MOBILE */
+
+.gallery-display {
    margin: 20px 27px 0px 27px;
 }
 
-.gallery-item {
+.gallery-container {
    position: relative;
    /* allows for the image text to be placed relative to the image itself */
 }
@@ -13,14 +15,20 @@
    cursor: pointer;
 }
 
-.gallery-text1,
+.gallery-text1, 
 .gallery-text2 {
    display: none;
 }
 
-@media only screen and (min-width: 958px) {
+/* IPAD */
+@media only screen and (min-width: 578px) {
    
-   .gallery-grid {
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 835px) {
+   
+   .gallery-display {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       grid-template-rows: auto;
@@ -38,7 +46,7 @@
       /* acts as substitute for an overlay - overlay gets in way of modal */
       transition: .3s ease-in-out;
    }
-   
+
    .gallery-text1, 
    .gallery-text2 {
       z-index: 1;
@@ -58,14 +66,16 @@
       /* ensures text starts in the middle of the image */
       transition: .3s ease-in-out;
    }
-   
+
    .gallery-text2 {
       top: 60%;
       font-size: 15px;
    }
    
-   .gallery-item:hover .gallery-text1, 
-   .gallery-item:hover .gallery-text2 {
+   .gallery-container:hover 
+   .gallery-text1, 
+   .gallery-container:hover 
+   .gallery-text2 {
       opacity: 1;
       /* ensures the text becomes visible on hover */
    }

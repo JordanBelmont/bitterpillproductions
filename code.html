@@ -18,8 +18,8 @@
       <a href="index.html">
          <img class="pill" src="images/bitterpill-logo.png" alt="bitter pill logo">
       </a>
-      <nav class="desktop-nav">
-         <ul class="desktop-ul">
+      <nav id=navBurger>
+         <ul class="nav-ul">
             <li><a class="nav-link" href="art.html">ART</a></li>
             <li><a class="code-link" href="code.html">CODE</a></li>
             <li><a class="nav-link" href="copy.html">COPY</a></li>
@@ -27,7 +27,6 @@
             <li><a class="nav-link" href="bio.html">BIO</a></li>
          </ul>
       </nav>
-
       <button class="burger" id='burger'>
          <svg viewBox="0 0 100 80" width="40" height="40">
             <rect width="100" height="20"></rect>
@@ -35,28 +34,15 @@
             <rect y="60" width="100" height="20"></rect>
          </svg>
       </button>
-
-      <nav class='phone-nav' id='navBurger'>
-         <ul class="phone-ul">
-            <li><a class="nav-link" href="art.html">ART</a></li>
-            <li><a class="code-link" href="code.html">CODE</a></li>
-            <li><a class="nav-link" href="copy.html">COPY</a></li>
-            <li><a class="nav-link" href="blog.html">BLOG</a></li>
-            <li><a class="nav-link" href="bio.html">BIO</a></li>
-         </ul>
-      </nav>
    </header>
 
-   <div class="code-grid">
+   <div class="code-display">
       <div class="code-title-container w-2 h-1">
-         <div class="code-title">
-            <h1 class="code-header">YASHANA: THE ORACLE</h1>
-         </div>
+         <h1 class="code-title">YASHANA: THE ORACLE</h1>
       </div>
       <div class="code-image-container w-3 h-4">
          <a href="yashana.html">
-            <img class="code-image" src="images/code-images/ask-sothoth/ask-sothoth-preview.png"
-               alt="bio picture">
+            <img class="code-image" src="images/code-images/ask-sothoth/ask-sothoth-preview.png" alt="bio picture">
          </a>
       </div>
       <div class="code-text-container w-2 h-4">
@@ -74,9 +60,8 @@
             script and creating arrays, piecing it all together with simple click functionality.
             <br><br>
             Following on from the magic 8-ball app
-            
          </p>
-         <div class="code-icon-wrapper">
+         <div class="code-icon-container">
             <a href="https://github.com/JordanBelmont/Yashana" target="_blank" class="code-icon-link">
                <img class="code-icon" src="/icons/github2.svg" alt="Github Link" title="Github">
             </a>
@@ -87,12 +72,16 @@
       </div>
    </div>
 
-   <div class="code-grid">
-      <div class="code-container w-2 h-4">
-         <div class="code-title">
-            <h1 class="code-header">ASK-SATHOTH</h1>
-         </div>
-         <br><br>
+   <div class="code-display">
+      <div class="code-title-container w-2 h-1">
+         <h1 class="code-title">ASK-SATHOTH</h1>
+      </div>
+      <div class="code-image-container w-3 h-4">
+         <a href="ask-sathoth.html">
+            <img class="code-image" src="images/code-images/ask-sothoth/ask-sothoth-preview.png" alt="bio picture">
+         </a>
+      </div>
+      <div class="code-text-container w-2 h-4">
          <h2 class="code-heading">FUNCTION:</h2>
          <p class="code-stats-prof">Magic 8-Ball</p>
          <br><br>
@@ -101,33 +90,27 @@
          <br><br>
          <h2 class="code-heading">LANGUAGES:</h2>
          <p class="code-stats-prof">HTML / CSS / JavaScript</p>
-         <br><br><br>
+         <br><br>
          <p class="code-stats">
-            I decided to create a classic magic 8-ball app and combined it with some Eldritch goodness. It was a good
-            test of using the JavaScript Math.random function as well as some grid layout design. I'll include some CSS
-            animation to it at some point.
+            Following on from the magic 8-ball app, Yashana: The Oracle is a further experiment in Math.random, audio
+            script and creating arrays, piecing it all together with simple click functionality.
+            <br><br>
+            Following on from the magic 8-ball app
          </p>
-         <br>
-         <div class="code-icon-wrapper">
-            <a href="https://github.com/JordanBelmont/Ask-Sothoth" target="_blank" class="code-icon-link">
+         <div class="code-icon-container">
+            <a href="https://github.com/JordanBelmont/Ask-Sathoth" target="_blank" class="code-icon-link">
                <img class="code-icon" src="/icons/github2.svg" alt="Github Link" title="Github">
             </a>
-            <a href="http://127.0.0.1:5502/blog-2.html" class="code-icon-link">
+            <a href="http://127.0.0.1:5502/blog-5.html" class="code-icon-link">
                <img class="code-icon" src="/icons/blog.svg" alt="Blog Link" title="Blog">
             </a>
          </div>
       </div>
-      <div class="code-image-container w-3 h-4">
-         <a href="ask-sathoth.html">
-            <img class="code-image w-3 h-4" src="images/code-images/ask-sothoth/ask-sothoth-preview.png"
-               alt="bio picture">
-         </a>
-      </div>
    </div>
 
    <footer>
-      <p class="foot">For all your creative aches and pains</p>
-      <div class="foot-icon-wrapper">
+      <p class="foot-text">For all your creative aches and pains</p>
+      <div class="foot-icon-container">
          <a href="https://twitter.com/BitterPillProd2" target="_blank" class="foot-icon-link">
             <img class="foot-icon" src="/icons/twitter.svg" alt="twitter icon" title="Twitter">
          </a>
@@ -141,7 +124,7 @@
             <img class="foot-icon" src="/icons/github.svg" alt="github icon" title="Github">
          </a>
       </div>
-      <p class="foot">&copy;2020 - Bitter Pill Productions</p>
+      <p class="foot-text">&copy;2020 - Bitter Pill Productions</p>
    </footer>
 </body>
 

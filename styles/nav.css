@@ -11,23 +11,11 @@ header {
    margin: 10px;
 }
 
-.desktop-nav {
+nav {
    display: none;
 }
 
-.burger {
-   position: absolute;
-   right: 20px;
-   top: 20px;
-   border: none;
-   background: none;
-}
-
-.phone-nav {
-   display: none;
-}
-
-.phone-ul {
+.nav-ul {
    display: flex;
    flex-direction: column;
    justify-content: space-around;
@@ -55,7 +43,11 @@ li {
    transition: .3s ease-in-out;
 }
 
-.art-link, .copy-link, .code-link, .blog-link, .bio-link {
+.art-link, 
+.copy-link, 
+.code-link, 
+.blog-link, 
+.bio-link {
    display: inline-block;
    font-family: 'Nasal';
    font-size: 17px;
@@ -65,14 +57,21 @@ li {
    color: #DA3CAC;
 }
 
+.burger {
+   position: absolute;
+   right: 20px;
+   top: 20px;
+   border: none;
+   background: none;
+}
+
 @media only screen and (min-width: 958px) {
 
-   .desktop-nav {
+   nav {
       display: inline;
-      text-align: center;
    }
    
-   .desktop-ul {
+   .nav-ul {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
@@ -84,15 +83,6 @@ li {
    }
 
    li {
-      height: 40px;
       align-items: flex-end;
-   }
-
-   .nav-link {
-      font-size: 17px;
-   }
-   
-   .art-link, .copy-link, .code-link, .blog-link, .bio-link {
-      font-size: 17px;
    }
 }

@@ -1,5 +1,5 @@
-.foot-icon-wrapper,
-.code-icon-wrapper {
+.foot-icon-container,
+.code-icon-container {
    display: flex;
    flex-direction: row;
    justify-content: center;
@@ -31,7 +31,7 @@
 
 @media only screen and (min-width: 958px) {
 
-   .code-icon-wrapper {
+   .code-icon-container {
       margin-bottom: 10px;
    }
 }

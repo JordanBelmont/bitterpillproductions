@@ -1,36 +1,37 @@
-.bio-grid {
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   grid-template-rows: repeat(4, 1fr);
-   grid-column-gap: 50px;
-   grid-row-gap: 40px;
-   margin: 40px 80px;
+.bio-display {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   margin: 20px 27px 20px 27px;
 }
 
-.bio-profile-container {
-   text-align: justify;
-   /* makes the paragraph end at the same spot on each line */
-   font-family: 'Nasal';
-   font-size: 16px;
-   letter-spacing: 1px;
-   line-height: 20px;
-   color: #575757;
-}
-
-.bio-profile-title,
-.bio-contact-title {
+.bio-profile-title-container, 
+.bio-contact-title-container {
    display: flex;
    align-items: center;
    justify-content: center;
+   text-align: center;
+   margin-bottom: 40px;
+   font-family: 'Nasal';
    font-size: 20px;
    font-weight: bold;
    letter-spacing: 2px;
+   color: #575757;
 }
 
-.bio-profile-title:after, 
-.bio-profile-title:before,
-.bio-contact-title:after,
-.bio-contact-title:before {
+.bio-profile-title-container {
+   order: 1;
+}
+
+.bio-contact-title-container {
+   order: 4;
+   margin-top: 40px;
+}
+
+.bio-profile-title-container:after, 
+.bio-profile-title-container:before, 
+.bio-contact-title-container:after, 
+.bio-contact-title-container:before {
    content: '';
    width: 150px;
    height: 2px;
@@ -38,11 +39,29 @@
    background: #DA3CAC;
 }
 
+.bio-profile-container, 
+.bio-contact-container {
+   text-align: justify;
+   font-family: 'Nasal';
+   font-size: 16px;
+   letter-spacing: 1px;
+   line-height: 20px;
+   color: #575757;
+}
+
+.bio-profile-container {
+   order: 3;
+}
+
+.bio-contact-container {
+   order: 6;
+}
+
 .bio-heading {
    font-weight: bold;
 }
 
-.bio-heading,
+.bio-heading, 
 .bio-stats-prof {
    display: inline;
 }
@@ -53,11 +72,15 @@
 
 .bio-label {
    display: block;
-   margin-top: 20px;
    font-weight: bold;
 }
 
-.bio-input,
+.address, 
+.message {
+   margin-top: 20px;
+}
+
+.bio-input, 
 .bio-textarea {
    display: block;
    width: 100%;
@@ -79,12 +102,12 @@
 
 .bio-submit-container {
    text-align: center;
+   margin-top: 20px;
 }
 
 .bio-submit-button {
    width: 20%;
    padding: 10px;
-   margin-top: 50px;
    border: 2px solid #818181;
    border-radius: 5px;
    font-family: 'Nasal';
@@ -104,8 +127,86 @@
    outline: none;
 }
 
+.bio-image-container1 {
+   order: 2;
+   margin-bottom: 20px;
+}
+
+.bio-image-container2 {
+   display: none;
+}
+
 .bio-image {
-   width: 32vw;
+   width: 86vw;
    max-height: 100%;
    object-fit: cover;
+}
+
+@media only screen and (min-width: 958px) {
+   
+   .bio-display {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 50px 600px 50px 500px;
+      grid-column-gap: 50px;
+      margin: 40px 80px;
+   }
+
+   .bio-profile-title-container {
+      margin-bottom: 30px;
+   }
+   
+   .bio-contact-title-container {
+      margin-top: 0px;
+      margin-bottom: 30px;
+   }
+
+   .bio-profile-container,
+   .bio-contact-container {
+      display: block;
+      text-align: justify;
+      margin: 10px;
+      font-family: 'Nasal';
+      font-size: 16px;
+      letter-spacing: 1px;
+      line-height: 20px;
+      color: #575757;
+   }
+
+   .bio-label {
+      display: block;
+      margin-top: 20px;
+      font-weight: bold;
+   }
+
+   .bio-stats {
+      margin-bottom: 50px;
+   }
+
+   .full-name {
+      margin-top: 0px;
+   }
+
+   .bio-submit-container {
+      display: block;
+      margin-top: 0px
+   }
+
+   .bio-submit-button {
+      margin-top: 18px
+   }
+
+   .bio-image-container1,
+   .bio-image-container2 {
+      text-align: right;
+   }
+
+   .bio-image-container2 {
+      display: block;
+      order: 4;
+   }
+
+   .bio-image {
+      width: 32vw;
+   }
 }
