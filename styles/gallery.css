@@ -1,10 +1,5 @@
 .gallery-grid {
-   display: grid;
-   grid-template-columns: repeat(12, 1fr);
-   grid-template-rows: auto;
-   grid-column-gap: 65px;
-   grid-row-gap: 45px;
-   margin: 40px 60px;
+   margin: 20px 27px 0px 27px;
 }
 
 .gallery-item {
@@ -14,41 +9,64 @@
 
 .gallery-image {
    width: 100%;
+   margin-bottom: 20px;
    cursor: pointer;
 }
 
-.gallery-image:hover {
-   filter: brightness(40%);
-   /* acts as substitute for an overlay - overlay gets in way of modal */
-   transition: .3s ease-in-out;
-}
-
-.gallery-text1, 
+.gallery-text1,
 .gallery-text2 {
-   z-index: 1;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   text-align: center;
-   font-family: 'Nasal';
-   font-size: 20px;
-   font-weight: bold;
-   letter-spacing: 2px;
-   color: #ffff;
-   opacity: 0;
-   pointer-events: none;
-   transform: translate(-50%, -50%);
-   /* ensures text starts in the middle of the image */
-   transition: .3s ease-in-out;
+   display: none;
 }
 
-.gallery-text2 {
-   top: 60%;
-   font-size: 15px;
-}
+@media only screen and (min-width: 958px) {
+   
+   .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: auto;
+      grid-column-gap: 65px;
+      grid-row-gap: 45px;
+      margin: 40px 60px;
+   }
 
-.gallery-item:hover .gallery-text1, 
-.gallery-item:hover .gallery-text2 {
-   opacity: 1;
-   /* ensures the text becomes visible on hover */
+   .gallery-image {
+      margin-bottom: 0px;
+   }
+
+   .gallery-image:hover {
+      filter: brightness(40%);
+      /* acts as substitute for an overlay - overlay gets in way of modal */
+      transition: .3s ease-in-out;
+   }
+   
+   .gallery-text1, 
+   .gallery-text2 {
+      z-index: 1;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      text-align: center;
+      font-family: 'Nasal';
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: #ffff;
+      opacity: 0;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      /* ensures text starts in the middle of the image */
+      transition: .3s ease-in-out;
+   }
+   
+   .gallery-text2 {
+      top: 60%;
+      font-size: 15px;
+   }
+   
+   .gallery-item:hover .gallery-text1, 
+   .gallery-item:hover .gallery-text2 {
+      opacity: 1;
+      /* ensures the text becomes visible on hover */
+   }
 }

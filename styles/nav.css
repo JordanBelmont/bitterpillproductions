@@ -1,32 +1,75 @@
-.phone-ul {
-   list-style: none;
+header {
+   z-index: 2;
+   position: sticky;
+   text-align: center;
+   top: 0px;
+   background-color: white;
 }
 
-.phone-nav {
-   display: none;
+.pill {
+   width: 80px;
+   margin: 10px;
 }
 
 .desktop-nav {
    display: none;
 }
 
+.burger {
+   position: absolute;
+   right: 20px;
+   top: 20px;
+   border: none;
+   background: none;
+}
+
+.phone-nav {
+   display: none;
+}
+
+.phone-ul {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   list-style: none;
+}
+
+li {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 40px;
+}
+
+.nav-link {
+   font-family: 'Nasal';
+   font-size: 17px;
+   font-weight: bold;
+   text-decoration: none;
+   letter-spacing: 2px;
+   color: #000000;
+}
+
+.nav-link:hover {
+   color: #DA3CAC;
+   transition: .3s ease-in-out;
+}
+
+.art-link, .copy-link, .code-link, .blog-link, .bio-link {
+   display: inline-block;
+   font-family: 'Nasal';
+   font-size: 17px;
+   font-weight: bold;
+   letter-spacing: 2px;
+   text-decoration: none;
+   color: #DA3CAC;
+}
+
 @media only screen and (min-width: 958px) {
-   
-   header {
-      z-index: 2;
-      position: sticky;
-      text-align: center;
-      top: 0px;
-      background-color: white;
-   }
-   
-   .pill {
-      width: 80px;
-      margin: 10px;
-   }
 
    .desktop-nav {
       display: inline;
+      text-align: center;
    }
    
    .desktop-ul {
@@ -35,38 +78,21 @@
       justify-content: space-around;
       padding-bottom: 20px;
    }
-   
-   li {
-      display: flex;
-      align-items: flex-end;
-      height: 40px;
-   }
-   
-   .nav-link {
-      font-family: 'Nasal';
-      font-size: 17px;
-      font-weight: bold;
-      text-decoration: none;
-      letter-spacing: 2px;
-      color: #000000;
-   }
-   
-   .nav-link:hover {
-      color: #DA3CAC;
-      transition: .3s ease-in-out;
-   }
-   
-   .art-link, .copy-link, .code-link, .blog-link, .bio-link {
-      display: inline-block;
-      font-family: 'Nasal';
-      font-size: 17px;
-      font-weight: bold;
-      letter-spacing: 2px;
-      text-decoration: none;
-      color: #DA3CAC;
-   }
 
    .burger {
       display: none;
+   }
+
+   li {
+      height: 40px;
+      align-items: flex-end;
+   }
+
+   .nav-link {
+      font-size: 17px;
+   }
+   
+   .art-link, .copy-link, .code-link, .blog-link, .bio-link {
+      font-size: 17px;
    }
 }

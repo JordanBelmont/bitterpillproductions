@@ -1,7 +1,10 @@
+// CREATE LIGHTBOX
+
 let lightbox = document.createElement('div')
 lightbox.id = 'lightbox'
 document.body.appendChild(lightbox)
-// creates a div called 'lightbox' in the body
+
+// ON CLICK LIGHTBOX
 
 let images = document.querySelectorAll('.gallery-image')
 // select all elements with certain classes
@@ -16,6 +19,8 @@ images.forEach(image => {
       lightbox.appendChild(img)
    })
 })
+
+// CLICK OFF LIGHTBOX
 
 lightbox.addEventListener('click', e => {
    if (e.target !== e.currentTarget) return
