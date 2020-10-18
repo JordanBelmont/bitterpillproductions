@@ -46,7 +46,6 @@
 
 .code-image-container {
    order: 2;
-   width: 100%;
    border: 5px solid #ececec;
    cursor: pointer;
    transition: .3s ease-in-out;
@@ -55,13 +54,8 @@
 
 .code-image {
    width: 100%;
-   object-fit: fit-content;
-}
-
-.code-image:hover {
-   filter: brightness(40%);
-   /* acts as substitute for an overlay - overlay gets in way of modal */
-   transition: .3s ease-in-out;
+   /* height: 250px; */
+   object-fit: fill;
 }
 
 @media only screen and (min-width: 958px) {
@@ -97,4 +91,14 @@
       margin-top: 20px;
    }
 
+   .code-image {
+      width: 100%;
+      object-fit: fit-content;
+   }
+
+   .code-image:hover {
+      filter: brightness(40%);
+      /* acts as substitute for an overlay - overlay gets in way of modal */
+      transition: .3s ease-in-out;
+   }
 }

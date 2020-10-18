@@ -1,28 +1,25 @@
-.blog-wrapper {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   margin: 40px 80px 0px 80px;
+.blog-display {
+   margin: 20px 27px 20px 27px;
 }
 
 .blog-card {
-   width: 75%;
-   padding: 40px 20px 20px 20px;
-   margin-bottom: 50px;
+   padding: 20px 20px 20px 20px;
+   margin-bottom: 20px;
    box-shadow: 0 3px 7px -1px hsl(0, 0%, 20%);
    color: #575757;
 }
 
 .blog-background-1, 
 .blog-background-2, 
-.blog-background-3,
-.blog-background-4,
-.blog-background-5,
+.blog-background-3, 
+.blog-background-4, 
+.blog-background-5, 
 .blog-background-6 {
-   padding: 180px;
-   background-size: contain;
-   background-position: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   padding: 35%;
+   background-size: cover;
    background-repeat: no-repeat;
 }
 
@@ -54,6 +51,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   text-align: center;
    margin-top: 15px;
    font-family: "Nasal";
    font-size: 20px;
@@ -109,9 +107,14 @@
    margin-top: 30px;
 }
 
-.blog-read-more,
+.blog-read-more-container,
+.blog-back-container {
+   text-align: right;
+   margin-top: 15px;
+}
+
+.blog-read-more, 
 .blog-back {
-   float: right;
    margin-top: 15px;
    font-family: 'Nasal';
    font-size: 16px;
@@ -121,7 +124,7 @@
    color: #575757;
 }
 
-.blog-read-more:hover,
+.blog-read-more:hover, 
 .blog-back:hover {
    color: #DA3CAC;
    transition: .3s ease-in-out;
@@ -141,4 +144,32 @@
 
 .blog-image {
    width: 100%;
+}
+
+@media only screen and (min-width: 958px) {
+   .blog-display {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 40px 80px 0px 80px;
+   }
+
+   .blog-card {
+      width: 75%;
+      padding: 40px 20px 20px 20px;
+      margin-bottom: 0px;
+   }
+
+   .blog-background-1, 
+   .blog-background-2, 
+   .blog-background-3, 
+   .blog-background-4, 
+   .blog-background-5, 
+   .blog-background-6 {
+      padding: 180px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+   }
 }

@@ -21,12 +21,12 @@
 }
 
 /* IPAD */
-@media only screen and (min-width: 578px) {
+@media only screen and (min-width: 768px) {
    
 }
 
 /* DESKTOP */
-@media only screen and (min-width: 835px) {
+@media only screen and (min-width: 890px) {
    
    .gallery-display {
       display: grid;
