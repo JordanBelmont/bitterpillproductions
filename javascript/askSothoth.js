@@ -27,7 +27,7 @@ document.getElementById("sothothForm").addEventListener("submit", function (even
    if (input.value.length < 1) {
       alert("Enter a question");
       return;
-   } if (question.indexOf("?") != -1) {
+   } if (question.substr(-1) === "?") {
       let number = store[question] || Math.floor(Math.random() * 18)
       store[question] = number
       event.preventDefault();
@@ -56,7 +56,7 @@ let audioSources = [
 
 document.getElementById("sothothForm").addEventListener("submit", function play() {
    let question = document.getElementById("input").value;
-   if (question.indexOf("?") === -1) {
+   if (question.substr(-1) != "?") {
       return;
    } else {
       let audio = document.getElementById("sothothAudio")

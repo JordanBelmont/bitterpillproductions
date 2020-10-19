@@ -1,72 +1,112 @@
-.hero-container {
-   margin-left: 40px;
-   margin-right: 40px;
-}
-
 .hero {
    position: relative;
-   padding: 30vw 0vw 25vw 0vw;
-   background-size: 100%;
+   padding: 85vw 0vw;
+   margin: 20px 0px;
    background-position: center;
    background-repeat: no-repeat;
    background-image: url("../images/Splash.jpg");
-}
-
-.hover-box {
-   position: absolute;
-   text-align: center;
-   width: 26vw;
-   height: 9vw;
-   top: 35%;
-   left: 36.2%;
 }
 
 .primary-top-header,
 .primary-bottom-header {
    position: absolute;
    font-family: 'Virtualreality';
-   font-size: 2vw;
+   font-size: 25px;
    color: #68E931;
    text-shadow: 1px 1px 10px #68E931, 1px 1px 10px #68E931;
 }
 
 .primary-top-header {
-   top: 20%;
-   left: 8%;
+   top: 37.5%;
+   left: 13%;
    pointer-events: none;
 }
 
 .primary-bottom-header {
-   top: 60%;
-   left: 18%;
+   top: 44.5%;
+   left: 21.5%;
    pointer-events: none;
 }
 
 .secondary-top-header {
    display: none;
-   top: 20%;
-   left: 12%;
-   pointer-events: none;
 }
 
 .secondary-bottom-header {
    display: none;
-   top: 60%;
-   left: 4%;
-   pointer-events: none;
 }
 
-.hover-box:hover .secondary-top-header, 
-.hover-box:hover .secondary-bottom-header {
-   display: block;
-   position: absolute;
-   font-family: 'Virtualreality';
-   font-size: 2vw;
-   color: #DA3CAC;
-   text-shadow: 1px 1px 10px #DA3CAC, 1px 1px 10px #DA3CAC;
-}
-
-.hover-box:hover .primary-top-header, 
-.hover-box:hover .primary-bottom-header {
-   display: none;
+/* DESKTOP */
+@media only screen and (min-width: 890px) {
+   .hero-container {
+      margin: 40px 40px 20px 40px;
+   }
+   
+   .hero {
+      position: relative;
+      padding: 24vw 0vw 24vw 0vw;
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("../images/Splash.jpg");
+   }
+   
+   .hover-box {
+      position: absolute;
+      text-align: center;
+      width: 26vw;
+      height: 9vw;
+      top: 35%;
+      left: 36.2%;
+   }
+   
+   .primary-top-header,
+   .primary-bottom-header {
+      position: absolute;
+      font-family: 'Virtualreality';
+      font-size: 2vw;
+      color: #68E931;
+      text-shadow: 1px 1px 10px #68E931, 1px 1px 10px #68E931;
+   }
+   
+   .primary-top-header {
+      top: 8%;
+      left: 8%;
+      pointer-events: none;
+   }
+   
+   .primary-bottom-header {
+      top: 49%;
+      left: 18%;
+      pointer-events: none;
+   }
+   
+   .secondary-top-header {
+      display: none;
+      top: 8%;
+      left: 12%;
+      pointer-events: none;
+   }
+   
+   .secondary-bottom-header {
+      display: none;
+      top: 49%;
+      left: 4%;
+      pointer-events: none;
+   }
+   
+   .hover-box:hover .secondary-top-header, 
+   .hover-box:hover .secondary-bottom-header {
+      display: block;
+      position: absolute;
+      font-family: 'Virtualreality';
+      font-size: 2vw;
+      color: #DA3CAC;
+      text-shadow: 1px 1px 10px #DA3CAC, 1px 1px 10px #DA3CAC;
+   }
+   
+   .hover-box:hover .primary-top-header, 
+   .hover-box:hover .primary-bottom-header {
+      display: none;
+   }
 }

@@ -149,7 +149,7 @@
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: 50px 600px 50px 500px;
       grid-column-gap: 50px;
-      margin: 40px 80px;
+      margin: 40px 80px 20px 80px;
    }
 
    .bio-profile-title-container {

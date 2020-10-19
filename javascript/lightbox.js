@@ -4,12 +4,11 @@ let lightbox = document.createElement('div')
 lightbox.id = 'lightbox'
 document.body.appendChild(lightbox)
 
-// ON CLICK LIGHTBOX
+// CLICK ON LIGHTBOX
 
 let images = document.querySelectorAll('.gallery-image')
-// select all elements with certain classes
 images.forEach(image => {
-   image.addEventListener('click', e => {
+   image.addEventListener('click', () => {
       lightbox.classList.add('active')
       let img = document.createElement('img')
       img.src = image.src
@@ -18,11 +17,18 @@ images.forEach(image => {
       }
       lightbox.appendChild(img)
    })
-})
+});
 
 // CLICK OFF LIGHTBOX
 
 lightbox.addEventListener('click', e => {
-   if (e.target !== e.currentTarget) return
+   if (e.target !== e.currentTarget) 
+   return
    lightbox.classList.remove('active')
-})
+});
+
+document.addEventListener('keyup', e => { 
+   if (e.key == 27)
+   return
+   lightbox.classList.remove('active');
+});

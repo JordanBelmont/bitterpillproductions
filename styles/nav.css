@@ -106,7 +106,7 @@ li {
    stroke-width: 6;
 }
 
-@media only screen and (min-width: 958px) {
+@media only screen and (min-width: 415px) {
    
    nav {
       display: inline;
