@@ -4,7 +4,7 @@ let lightbox = document.createElement('div')
 lightbox.id = 'lightbox'
 document.body.appendChild(lightbox)
 
-// CLICK ON LIGHTBOX
+// LIGHTBOX ON CLICK
 
 let images = document.querySelectorAll('.gallery-image')
 images.forEach(image => {
@@ -19,7 +19,7 @@ images.forEach(image => {
    })
 });
 
-// CLICK OFF LIGHTBOX
+// LIGHTBOX OFF CLICK
 
 lightbox.addEventListener('click', e => {
    if (e.target !== e.currentTarget) 

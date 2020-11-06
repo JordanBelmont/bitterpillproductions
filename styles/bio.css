@@ -91,6 +91,7 @@
    font-family: monospace;
    font-size: 16px;
    letter-spacing: 1px;
+   resize: none;
 }
 
 .bio-input:focus, 
@@ -129,6 +130,7 @@
 
 .bio-image-container1 {
    order: 2;
+   text-align: center;
    margin-bottom: 20px;
 }
 
@@ -142,18 +144,91 @@
    object-fit: cover;
 }
 
-@media only screen and (min-width: 958px) {
-   
+/* IPAD */
+@media only screen and (min-width: 415px) {
    .bio-display {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 50px 600px 50px 500px;
+      /* grid-template-rows: 50px 600px 50px 500px; */
       grid-column-gap: 50px;
       margin: 40px 80px 20px 80px;
    }
 
    .bio-profile-title-container {
       margin-bottom: 30px;
+
+   }
+   
+   .bio-contact-title-container {
+      margin-top: 0px;
+      margin-bottom: 30px;
+   }
+
+   .bio-profile-container,
+   .bio-contact-container {
+      display: block;
+      text-align: justify;
+      margin: 10px;
+      font-family: 'Nasal';
+      font-size: 16px;
+      letter-spacing: 1px;
+      line-height: 20px;
+      color: #575757;
+   }
+
+   .bio-label {
+      display: block;
+      margin-top: 20px;
+      font-weight: bold;
+   }
+
+   .bio-stats {
+      margin-bottom: 50px;
+      float: right;
+   }
+
+   .full-name {
+      margin-top: 0px;
+   }
+
+   .bio-submit-container {
+      display: block;
+      margin-top: 0px
+   }
+
+   .bio-submit-button {
+      margin-top: 18px
+   }
+
+   .bio-image-container1,
+   .bio-image-container2 {
+      text-align: right;
+   }
+
+   .bio-image-container2 {
+      display: block;
+      order: 4;
+   }
+
+   .bio-image {
+      width: 32vw;
+   }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 958px) {
+   
+   .bio-display {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      /* grid-template-rows: 50px 600px 50px 500px; */
+      grid-column-gap: 50px;
+      margin: 40px 80px 20px 80px;
+   }
+
+   .bio-profile-title-container {
+      margin-bottom: 30px;
+
    }
    
    .bio-contact-title-container {

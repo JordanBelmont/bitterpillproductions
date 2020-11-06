@@ -10,4 +10,3 @@ document.getElementById("coinSlot").addEventListener("click", function play() {
       whisper.play();
    }, 2700)
 });
-

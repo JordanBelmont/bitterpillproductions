@@ -1,3 +1,5 @@
+/* MOBILE */
+
 #lightbox {
    z-index: 3;
    display: none;
@@ -22,10 +24,16 @@
    background-color: #000000;
 }
 
-@media only screen and (min-width: 958px) {
+/* IPAD */
+@media only screen and (min-width: 550px) {
 
    #lightbox img {
       max-width: 95%;
       max-height: 95%;
    }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 835px) {
+
 }

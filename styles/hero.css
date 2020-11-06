@@ -1,30 +1,31 @@
 .hero {
    position: relative;
-   padding: 85vw 0vw;
+   padding: 110vw 0vw;
    margin: 20px 0px;
+   background-size: 200%;
    background-position: center;
    background-repeat: no-repeat;
-   background-image: url("../images/Splash.jpg");
+   background-image: url("../images/Splash3.jpg");
 }
 
 .primary-top-header,
 .primary-bottom-header {
    position: absolute;
    font-family: 'Virtualreality';
-   font-size: 25px;
+   font-size: 20px;
    color: #68E931;
    text-shadow: 1px 1px 10px #68E931, 1px 1px 10px #68E931;
 }
 
 .primary-top-header {
-   top: 37.5%;
-   left: 13%;
+   top: 19%;
+   left: 25.5%;
    pointer-events: none;
 }
 
 .primary-bottom-header {
-   top: 44.5%;
-   left: 21.5%;
+   top: 23%;
+   left: 24.5%;
    pointer-events: none;
 }
 
@@ -36,33 +37,33 @@
    display: none;
 }
 
-/* DESKTOP */
-@media only screen and (min-width: 890px) {
+/* IPAD */
+@media only screen and (min-width: 550px) {
    .hero-container {
-      margin: 40px 40px 20px 40px;
+      margin: 2.5em 3em 1em 3em;
    }
    
    .hero {
-      position: relative;
-      padding: 24vw 0vw 24vw 0vw;
+      /* position: relative; */
+      padding: 48vw 0vw;
       background-size: 100%;
       background-position: center;
       background-repeat: no-repeat;
-      background-image: url("../images/Splash.jpg");
+      background-image: url("../images/Splash2.jpg");
    }
    
    .hover-box {
       position: absolute;
-      text-align: center;
+      /* text-align: center; */
       width: 26vw;
       height: 9vw;
-      top: 35%;
-      left: 36.2%;
+      top: 18vw;
+      left: 29vw;
    }
    
    .primary-top-header,
    .primary-bottom-header {
-      position: absolute;
+      position: relative;
       font-family: 'Virtualreality';
       font-size: 2vw;
       color: #68E931;
@@ -70,28 +71,28 @@
    }
    
    .primary-top-header {
-      top: 8%;
-      left: 8%;
+      top: 1vw;
+      left: 5vw;
       pointer-events: none;
    }
    
    .primary-bottom-header {
-      top: 49%;
-      left: 18%;
+      top: 4.5vw;
+      left: 7.5vw;
       pointer-events: none;
    }
    
    .secondary-top-header {
       display: none;
-      top: 8%;
+      top: 13%;
       left: 12%;
       pointer-events: none;
    }
    
    .secondary-bottom-header {
       display: none;
-      top: 49%;
-      left: 4%;
+      top: 50%;
+      left: 3.5%;
       pointer-events: none;
    }
    
@@ -109,4 +110,9 @@
    .hover-box:hover .primary-bottom-header {
       display: none;
    }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 835px) {
+   
 }

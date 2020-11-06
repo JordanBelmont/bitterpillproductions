@@ -1,7 +1,7 @@
 /* MOBILE */
 
 .gallery-display {
-   margin: 20px 27px 0px 27px;
+   margin: 30px 27px 0px 27px;
 }
 
 .gallery-container {
@@ -11,7 +11,7 @@
 
 .gallery-image {
    width: 100%;
-   margin-bottom: 20px;
+   margin-bottom: 1.250em;
    cursor: pointer;
 }
 
@@ -21,73 +21,151 @@
 }
 
 /* IPAD */
-@media only screen and (min-width: 415px) {
+
+@media only screen and (min-width: 550px) {
    .gallery-display {
       display: grid;
       grid-template-columns: repeat(8, 1fr);
-      grid-template-rows: auto;
-      grid-column-gap: 30px;
-      grid-row-gap: 45px;
-      margin: 40px 60px 20px 60px;
-   }
-
-   .a-4 {
-      grid-row: span 8;
+      grid-column-gap: 3em;
+      grid-row-gap: 1em;
    }
 }
 
+.a-1 {
+   order: 1;
+}
+
+.a-2 {
+   order: 2;
+}
+
+.a-3 {
+   order: 3;
+}
+
+.a-4 {
+   order: 5;
+}
+
+.a-5 {
+   order: 10;
+}
+
+.a-6 {
+   order: 4;
+}
+
+.a-7 {
+   order: 9;
+}
+
+.a-8 {
+   order: 16;
+}
+
+.a-9 {
+   order: 12;
+}
+
+.a-10 {
+   order: 12;
+}
+
+.a-11 {
+   order: 13;
+}
+
+.a-12 {
+   order: 14;
+}
+
+.a-13 {
+   order: 6;
+}
+
+.a-14 {
+   order: 8;
+}
+
+.a-15 {
+   order: 7;
+}
+
+.a-16 {
+   order: 15;
+}
+
+.a-17 {
+   order: 20;
+}
+
+.a-18 {
+   order: 17;
+}
+
+.a-19 {
+   order: 18;
+}
+
+.a-20 {
+   order: 19;
+}
+
+.gallery-image:hover {
+   filter: brightness(40%);
+   /* acts as substitute for an overlay - overlay gets in way of modal */
+   transition: .3s ease-in-out;
+}
+
+.gallery-text1, 
+.gallery-text2 {
+   z-index: 1;
+   display: block;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   text-align: center;
+   font-family: 'Nasal';
+   font-size: 1.250em;
+   font-weight: bold;
+   letter-spacing: 0.125em;
+   color: #ffff;
+   opacity: 0;
+   pointer-events: none;
+   transform: translate(-50%, -50%);
+   /* ensures text starts in the middle of the image */
+   transition: .3s ease-in-out;
+}
+
+.gallery-text2 {
+   top: 60%;
+   font-size: 1em;
+}
+
+.gallery-container:hover 
+.gallery-text1, 
+.gallery-container:hover 
+.gallery-text2 {
+   opacity: 1;
+   /* ensures the text becomes visible on hover */
+}
+
 /* DESKTOP */
+
 @media only screen and (min-width: 835px) {
    
    .gallery-display {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: auto;
-      grid-column-gap: 65px;
-      grid-row-gap: 45px;
-      margin: 40px 60px 20px 60px;
+      grid-column-gap: 3em;
+      grid-row-gap: 3em;
    }
 
    .gallery-image {
-      margin-bottom: 0px;
+      margin-bottom: 0em;
    }
 
-   .gallery-image:hover {
-      filter: brightness(40%);
-      /* acts as substitute for an overlay - overlay gets in way of modal */
-      transition: .3s ease-in-out;
-   }
-
-   .gallery-text1, 
-   .gallery-text2 {
-      z-index: 1;
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      text-align: center;
-      font-family: 'Nasal';
-      font-size: 20px;
-      font-weight: bold;
-      letter-spacing: 2px;
-      color: #ffff;
-      opacity: 0;
-      pointer-events: none;
-      transform: translate(-50%, -50%);
-      /* ensures text starts in the middle of the image */
-      transition: .3s ease-in-out;
-   }
-
-   .gallery-text2 {
-      top: 60%;
-      font-size: 15px;
-   }
-   
-   .gallery-container:hover 
-   .gallery-text1, 
-   .gallery-container:hover 
-   .gallery-text2 {
-      opacity: 1;
-      /* ensures the text becomes visible on hover */
+   .gallery-container {
+      order: 0;
    }
 }

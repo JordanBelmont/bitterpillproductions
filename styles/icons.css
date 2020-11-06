@@ -1,3 +1,5 @@
+/* MOBILE */
+
 .foot-icon-container,
 .code-icon-container {
    display: flex;
@@ -29,11 +31,16 @@
    transition: .3s ease-in-out;
 }
 
-@media only screen and (min-width: 958px) {
-
+/* IPAD */
+@media only screen and (min-width: 550px) {
+   
    .code-icon-container {
       margin-bottom: 10px;
    }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 835px) {
 }
 
 

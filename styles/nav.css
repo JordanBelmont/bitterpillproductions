@@ -1,3 +1,5 @@
+/* MOBILE */
+
 header {
    z-index: 2;
    position: sticky;
@@ -7,8 +9,8 @@ header {
 }
 
 .pill {
-   width: 80px;
-   margin: 10px;
+   width: 5em;
+   margin: 0.625em;
 }
 
 nav {
@@ -26,15 +28,15 @@ li {
    display: flex;
    align-items: center;
    justify-content: center;
-   height: 40px;
+   height: 2.5em;
 }
 
 .nav-link {
    font-family: 'Nasal';
-   font-size: 17px;
+   font-size: 1.063em;
    font-weight: bold;
    text-decoration: none;
-   letter-spacing: 2px;
+   letter-spacing: 0.125em;
    color: #000000;
 }
 
@@ -50,17 +52,17 @@ li {
 .bio-link {
    display: inline-block;
    font-family: 'Nasal';
-   font-size: 17px;
+   font-size: 1.063em;
    font-weight: bold;
-   letter-spacing: 2px;
+   letter-spacing: 0.125em;
    text-decoration: none;
    color: #DA3CAC;
 }
 
 .burger-button {
    position: absolute;
-   right: 14px;
-   top: 13.5px;
+   right: 0.950em;
+   top: 1.012em;
    border: none;
    background: none;
    outline: none;
@@ -106,8 +108,8 @@ li {
    stroke-width: 6;
 }
 
-@media only screen and (min-width: 415px) {
-   
+/* IPAD */
+@media only screen and (min-width: 550px) {
    nav {
       display: inline;
    }
@@ -116,7 +118,7 @@ li {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      padding-bottom: 20px;
+      padding-bottom: 1.250em;
    }
 
    .burger-button {
@@ -126,4 +128,9 @@ li {
    li {
       align-items: flex-end;
    }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 835px) {
+
 }
