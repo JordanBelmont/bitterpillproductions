@@ -106,7 +106,7 @@
 }
 
 /* IPAD */
-@media only screen and (min-width: 415px) {
+@media only screen and (min-width: 550px) {
 }
 
 /* DESKTOP */
@@ -121,7 +121,9 @@
 
    .sothoth-image-container {
       order: 0;
-      margin-top: 0px;
+      margin-top: 0;
+      grid-column: span 1;
+      grid-row: span 4;
    }
 
    .sothoth-image {
@@ -171,7 +173,7 @@
       display: flex;
       justify-content: center;
       margin-right: 22%;
-      margin-top: 10px;
+      margin-top: 0;
    }
 
    .sothoth-input {
@@ -199,12 +201,12 @@
       justify-content: center;
       text-align: center;
       margin-right: 24%;
-      margin-top: 0px;
+      margin-top: 0;
    }
 
    .sothoth-answer {
       letter-spacing: 2px;
-      font-size: 3.5vw;
+      font-size: 3.2vw;
       padding: 45px;
    }
 }

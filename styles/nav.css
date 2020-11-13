@@ -1,5 +1,3 @@
-/* MOBILE */
-
 header {
    z-index: 2;
    position: sticky;
@@ -61,8 +59,8 @@ li {
 
 .burger-button {
    position: absolute;
-   right: 0.950em;
-   top: 1.012em;
+   right: 2em;
+   top: 1.16em;
    border: none;
    background: none;
    outline: none;
@@ -128,9 +126,4 @@ li {
    li {
       align-items: flex-end;
    }
-}
-
-/* DESKTOP */
-@media only screen and (min-width: 835px) {
-
 }

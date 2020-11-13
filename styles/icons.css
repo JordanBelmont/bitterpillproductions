@@ -1,5 +1,3 @@
-/* MOBILE */
-
 .foot-icon-container,
 .code-icon-container {
    display: flex;
@@ -21,26 +19,30 @@
    margin-top: 20px;
 }
 
-.foot-icon:hover {
-   filter: invert(30%) sepia() saturate(1000%) hue-rotate(280deg) contrast(80%);
-   transition: .3s ease-in-out;
-}
-
-.code-icon:hover {
-   filter: invert(5%) sepia() saturate(1000%) hue-rotate(280deg) contrast(75%);
-   transition: .3s ease-in-out;
-}
-
 /* IPAD */
 @media only screen and (min-width: 550px) {
+   .foot-icon:hover {
+      filter: invert(30%) sepia() saturate(1000%) hue-rotate(280deg) contrast(80%);
+      transition: .3s ease-in-out;
+   }
    
-   .code-icon-container {
-      margin-bottom: 10px;
+   .code-icon:hover {
+      filter: invert(5%) sepia() saturate(1000%) hue-rotate(280deg) contrast(75%);
+      transition: .3s ease-in-out;
    }
 }
 
 /* DESKTOP */
-@media only screen and (min-width: 835px) {
-}
+@media only screen and (min-width: 958px) {
+   .code-icon-container {
+      margin-bottom: 10px;
+   }
 
+   .code-icon-container {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0%;
+   }
+}
 

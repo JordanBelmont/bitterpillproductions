@@ -1,11 +1,14 @@
 .blog-display {
-   margin: 30px 27px 0px 27px;
+   margin: 30px 40px 30px 40px;
 }
 
 .blog-card {
+   position: relative;
    padding: 20px 20px 20px 20px;
+   margin-bottom: 1.250em;
    box-shadow: 0 3px 7px -1px hsl(0, 0%, 20%);
    color: #575757;
+   font-family: 'Nasal';
    background-color: #ececec;
 }
 
@@ -28,7 +31,7 @@
 }
 
 .blog-background-5 {
-   background-image: url("../images/blog/Blog-5.jpg");
+   background-image: url("../images/blog/Blog-6.jpg");
 }
 
 .blog-background-4 {
@@ -52,8 +55,7 @@
    justify-content: center;
    align-items: center;
    text-align: center;
-   margin-top: 15px;
-   font-family: "Nasal";
+   margin: 15px 0px 15px 0px;
    font-size: 20px;
    font-weight: bold;
    letter-spacing: 2px;
@@ -72,7 +74,6 @@
 
 .blog-time {
    margin-top: 15px;
-   font-family: "Nasal";
    font-size: 16px;
    font-weight: bold;
    letter-spacing: 1px;
@@ -80,53 +81,21 @@
 
 .blog-preview {
    margin-top: 15px;
-   font-family: "Nasal";
+   margin-bottom: 15px;
    font-size: 16px;
    letter-spacing: 1px;
    line-height: 20px;
 }
 
-.blog-head {
-   font-family: "Nasal";
-   font-weight: bold;
-   font-size: 18px;
-   letter-spacing: 2px;
-   line-height: 20px;
-   text-transform: uppercase;
-   text-align: center;
-   margin-top: 40px;
+.blog-read-more-container {
+   position: absolute;
+   margin: 20px;
+   bottom: 0px;
+   right: 0px;
 }
 
-.blog-copy-intro {
-   margin-top: 20px;
-   font-family: "Nasal";
-   font-size: 16px;
-   letter-spacing: 1px;
-   line-height: 20px;
-}
-
-.blog-copy {
-   margin-top: 20px;
-   font-family: "Nasal";
-   font-size: 16px;
-   letter-spacing: 1px;
-   line-height: 20px;
-}
-
-.blog-image {
-   margin-top: 30px;
-}
-
-.blog-read-more-container,
-.blog-back-container {
-   text-align: right;
+.blog-read-more {
    margin-top: 15px;
-}
-
-.blog-read-more, 
-.blog-back {
-   margin-top: 15px;
-   font-family: 'Nasal';
    font-size: 16px;
    font-weight: bold;
    text-decoration: none;
@@ -134,44 +103,32 @@
    color: #575757;
 }
 
-.blog-read-more:hover, 
-.blog-back:hover {
+.blog-read-more:hover {
    color: #DA3CAC;
    transition: .3s ease-in-out;
 }
 
-.blog-figure {
-   text-align: center;
-}
-
-.blog-figcaption {
-   margin-top: 5px;
-   font-family: "Nasal";
-   font-size: 13px;
-   letter-spacing: 1px;
-   line-height: 20px;
-}
-
-.blog-image {
-   width: 100%;
-}
-
 /* IPAD */
-@media only screen and (min-width: 415px) {
-}
-
-/* DESKTOP */
-@media only screen and (min-width: 958px) {
-   .blog-grid {
+@media only screen and (min-width: 550px) {
+   .blog-display {
       display: grid;
-      grid-template-columns: repeat(12, 1fr);
       grid-column-gap: 3em;
       grid-row-gap: 3em;
    }
 
    .blog-card {
-      width: 100%;
-      padding: 40px 20px 20px 20px;
+      margin-bottom: 0em;
+   }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 958px) {
+   .blog-display {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(6, 45px);
+      grid-column-gap: 3em;
+      grid-row-gap: 3em;
    }
 
    .blog-background-1, 

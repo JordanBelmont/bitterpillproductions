@@ -1,11 +1,11 @@
 .hero {
    position: relative;
    padding: 110vw 0vw;
-   margin: 20px 0px;
+   margin: 30px 0px;
    background-size: 200%;
    background-position: center;
    background-repeat: no-repeat;
-   background-image: url("../images/Splash3.jpg");
+   background-image: url("../images/Splash4.jpg");
 }
 
 .primary-top-header,
@@ -40,25 +40,25 @@
 /* IPAD */
 @media only screen and (min-width: 550px) {
    .hero-container {
-      margin: 2.5em 3em 1em 3em;
+      margin: 30px 40px 30px 40px;
    }
    
    .hero {
-      /* position: relative; */
-      padding: 48vw 0vw;
+      position: relative;
+      padding: 55% 25%;
+      margin: 0;
       background-size: 100%;
-      background-position: center;
+      background-position: top;
       background-repeat: no-repeat;
-      background-image: url("../images/Splash2.jpg");
+      background-image: url("../images/Splash0.jpg");
    }
    
    .hover-box {
       position: absolute;
-      /* text-align: center; */
       width: 26vw;
       height: 9vw;
       top: 18vw;
-      left: 29vw;
+      left: 33.5vw;
    }
    
    .primary-top-header,
@@ -71,14 +71,14 @@
    }
    
    .primary-top-header {
-      top: 1vw;
-      left: 5vw;
+      top: 20px;
+      left: 30px;
       pointer-events: none;
    }
    
    .primary-bottom-header {
-      top: 4.5vw;
-      left: 7.5vw;
+      top: 40px;
+      left: 60px;
       pointer-events: none;
    }
    
@@ -113,6 +113,5 @@
 }
 
 /* DESKTOP */
-@media only screen and (min-width: 835px) {
-   
+@media only screen and (min-width: 958px) {
 }

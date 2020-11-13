@@ -1,0 +1,113 @@
+.article-display {
+   margin: 30px 40px 30px 40px;
+}
+
+.article-card {
+   padding: 20px 20px 20px 20px;
+   box-shadow: 0 3px 7px -1px hsl(0, 0%, 20%);
+   color: #575757;
+   background-color: #ececec;
+}
+
+.article-title {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   margin: 15px 0px 30px 0px;
+   font-family: "Nasal";
+   font-size: 20px;
+   font-weight: bold;
+   letter-spacing: 2px;
+   line-height: 25px;
+   text-transform: uppercase;
+}
+
+.article-title:after, 
+.article-title:before {
+   content: '';
+   width: 100px;
+   height: 2px;
+   margin: 0 10px;
+   background: #DA3CAC;
+}
+
+.article-head {
+   font-family: "Nasal";
+   font-weight: bold;
+   font-size: 18px;
+   letter-spacing: 2px;
+   line-height: 20px;
+   text-transform: uppercase;
+   text-align: center;
+   margin-top: 40px;
+}
+
+.article-intro {
+   margin-top: 20px;
+   font-family: "Nasal";
+   font-size: 16px;
+   letter-spacing: 1px;
+   line-height: 20px;
+}
+
+.article-copy {
+   margin-top: 20px;
+   font-family: "Nasal";
+   font-size: 16px;
+   letter-spacing: 1px;
+   line-height: 20px;
+}
+
+.article-image {
+   margin-top: 30px;
+   width: 100%;
+}
+
+.article-back-container {
+   text-align: right;
+   margin-top: 15px;
+}
+
+.article-back {
+   margin-top: 15px;
+   font-family: 'Nasal';
+   font-size: 16px;
+   font-weight: bold;
+   text-decoration: none;
+   letter-spacing: 1px;
+   color: #575757;
+}
+
+.article-back:hover {
+   color: #DA3CAC;
+   transition: .3s ease-in-out;
+}
+
+.article-figure {
+   text-align: center;
+}
+
+.article-figcaption {
+   margin-top: 5px;
+   font-family: "Nasal";
+   font-size: 13px;
+   letter-spacing: 1px;
+   line-height: 20px;
+}
+
+/* IPAD */
+@media only screen and (min-width: 550px) {
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 958px) {
+   .article-display {
+      margin: 30px 100px 30px 100px;
+   }
+   
+   .article-card {
+      width: 100%;
+      padding: 40px 20px 20px 20px;
+   }
+}

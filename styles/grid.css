@@ -1,6 +1,5 @@
 /* IPAD */
-
-@media only screen and (min-width: 415px) {
+@media only screen and (min-width: 550px) {
    .art-1, 
    .art-2, 
    .art-3, 
@@ -25,6 +24,8 @@
    .art-5, 
    .art-16, 
    .art-17,
+   .code-1,
+   .code-2,
    .copy-1, 
    .copy-2, 
    .copy-3, 
@@ -37,15 +38,34 @@
       grid-column: span 8;
       grid-row: span 6;
    }
+
+   .bio-1,
+   .bio-4 {
+      grid-column: span 2;
+      grid-row: span 1;
+   }
+
+   .bio-2,
+   .bio-5 {
+      grid-column: span 2;
+      grid-row: span 2;
+   }
+
+   .bio-3,
+   .bio-6 {
+      grid-column: span 1;
+      grid-row: span 2;
+   }
 }
 
 /* DESKTOP */
-
-@media only screen and (min-width: 835px) {
+@media only screen and (min-width: 958px) {
    .art-4, 
    .art-5, 
    .art-16, 
    .art-17,
+   .code-1,
+   .code-2,
    .copy-1, 
    .copy-2, 
    .copy-3, 
