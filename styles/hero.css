@@ -5,27 +5,35 @@
    background-size: 200%;
    background-position: center;
    background-repeat: no-repeat;
-   background-image: url("../images/Splash4.jpg");
+   background-image: url("../images/hero/hero2.jpg");
+}
+
+.hover-box {
+   position: absolute;
+   width: 54%;
+   height: 9%;
+   top: 18%;
+   left: 23%;
 }
 
 .primary-top-header,
 .primary-bottom-header {
    position: absolute;
    font-family: 'Virtualreality';
-   font-size: 20px;
+   font-size: 4.5vw;
    color: #68E931;
    text-shadow: 1px 1px 10px #68E931, 1px 1px 10px #68E931;
 }
 
 .primary-top-header {
-   top: 19%;
-   left: 25.5%;
+   top: 16%;
+   left: 4%;
    pointer-events: none;
 }
 
 .primary-bottom-header {
-   top: 23%;
-   left: 24.5%;
+   top: 59%;
+   left: 14.5%;
    pointer-events: none;
 }
 
@@ -50,20 +58,20 @@
       background-size: 100%;
       background-position: top;
       background-repeat: no-repeat;
-      background-image: url("../images/Splash0.jpg");
+      background-image: url("../images/hero/hero1.jpg");
    }
    
    .hover-box {
       position: absolute;
-      width: 26vw;
-      height: 9vw;
-      top: 18vw;
-      left: 33.5vw;
+      width: 28%;
+      height: 10%;
+      top: 17%;
+      left: 36%;
    }
-   
+
    .primary-top-header,
    .primary-bottom-header {
-      position: relative;
+      position: absolute;
       font-family: 'Virtualreality';
       font-size: 2vw;
       color: #68E931;
@@ -71,35 +79,35 @@
    }
    
    .primary-top-header {
-      top: 20px;
-      left: 30px;
+      top: 23%;
+      left: 6%;
       pointer-events: none;
    }
    
    .primary-bottom-header {
-      top: 40px;
-      left: 60px;
+      top: 61%;
+      left: 15.5%;
       pointer-events: none;
    }
    
    .secondary-top-header {
       display: none;
-      top: 13%;
-      left: 12%;
+      top: 23%;
+      left: 11%;
       pointer-events: none;
    }
    
    .secondary-bottom-header {
       display: none;
-      top: 50%;
-      left: 3.5%;
+      top: 61%;
+      left: 3%;
       pointer-events: none;
    }
    
    .hover-box:hover .secondary-top-header, 
    .hover-box:hover .secondary-bottom-header {
-      display: block;
       position: absolute;
+      display: block;
       font-family: 'Virtualreality';
       font-size: 2vw;
       color: #DA3CAC;
@@ -114,4 +122,19 @@
 
 /* DESKTOP */
 @media only screen and (min-width: 958px) {
+   .primary-top-header {
+      left: 8%;
+   }
+   
+   .primary-bottom-header {
+      left: 17.5%;
+   }
+   
+   .secondary-top-header {
+      left: 12.5%;
+   }
+   
+   .secondary-bottom-header {
+      left: 4.5%;
+   }
 }

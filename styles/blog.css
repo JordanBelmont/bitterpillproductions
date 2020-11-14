@@ -17,7 +17,9 @@
 .blog-background-3, 
 .blog-background-4, 
 .blog-background-5, 
-.blog-background-6 {
+.blog-background-6,
+.blog-background-7,
+.blog-background-8 {
    display: flex;
    flex-direction: column;
    justify-content: space-around;
@@ -26,28 +28,36 @@
    background-repeat: no-repeat;
 }
 
+.blog-background-8 {
+   background-image: url("../images/blog-images/Blog-1.jpg");
+}
+
+.blog-background-7 {
+   background-image: url("../images/blog-images/Blog-1.jpg");
+}
+
 .blog-background-6 {
-   background-image: url("../images/blog/Blog-6.jpg");
+   background-image: url("../images/blog-images/Blog-6.jpg");
 }
 
 .blog-background-5 {
-   background-image: url("../images/blog/Blog-6.jpg");
+   background-image: url("../images/blog-images/Blog-6.jpg");
 }
 
 .blog-background-4 {
-   background-image: url("../images/blog/Blog-1.jpg");
+   background-image: url("../images/blog-images/Blog-1.jpg");
 }
 
 .blog-background-3 {
-   background-image: url("../images/blog/Blog-3.jpg");
+   background-image: url("../images/blog-images/Blog-3.jpg");
 }
 
 .blog-background-2 {
-   background-image: url("../images/blog/Blog-2.jpg");
+   background-image: url("../images/blog-images/Blog-2.jpg");
 }
 
 .blog-background-1 {
-   background-image: url("../images/blog/Blog-1.jpg");
+   background-image: url("../images/blog-images/Blog-1.jpg");
 }
 
 .blog-title {
@@ -136,7 +146,9 @@
    .blog-background-3, 
    .blog-background-4, 
    .blog-background-5, 
-   .blog-background-6 {
+   .blog-background-6,
+   .blog-background-7,
+   .blog-background-8 {
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
