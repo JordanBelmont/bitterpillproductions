@@ -8,15 +8,16 @@
 
 .gallery-image {
    width: 100%;
+   outline-color: #DA3CAC;
    cursor: pointer;
 }
 
-.gallery-text1, 
-.gallery-text2 {
+.gallery-text1, .gallery-text2 {
    display: none;
 }
 
 /* IPAD */
+
 @media only screen and (min-width: 550px) {
    .gallery-display {
       display: grid;
@@ -24,13 +25,122 @@
       grid-column-gap: 3em;
       grid-row-gap: 3em;
    }
-
    .gallery-container {
       position: relative;
       /* allows for the image text to be placed relative to the image itself */
       margin-bottom: 0;
    }
+   .art-1 {
+      order: 1;
+   }
+   .art-2 {
+      order: 2;
+   }
+   .art-3 {
+      order: 3;
+   }
+   .art-4 {
+      order: 5;
+   }
+   .art-5 {
+      order: 10;
+   }
+   .art-6 {
+      order: 4;
+   }
+   .art-7 {
+      order: 9;
+   }
+   .art-8 {
+      order: 16;
+   }
+   .art-9 {
+      order: 12;
+   }
+   .art-10 {
+      order: 12;
+   }
+   .art-11 {
+      order: 13;
+   }
+   .art-12 {
+      order: 14;
+   }
+   .art-13 {
+      order: 6;
+   }
+   .art-14 {
+      order: 8;
+   }
+   .art-15 {
+      order: 7;
+   }
+   .art-16 {
+      order: 15;
+   }
+   .art-17 {
+      order: 20;
+   }
+   .art-18 {
+      order: 17;
+   }
+   .art-19 {
+      order: 18;
+   }
+   .art-20 {
+      order: 19;
+   }
+   .gallery-image:hover, .gallery-image:focus {
+      filter: brightness(40%);
+      /* acts as substitute for an overlay - overlay gets in way of modal */
+      transition: .3s ease-in-out;
+   }
+   .gallery-text1, .gallery-text2 {
+      z-index: 1;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      text-align: center;
+      font-family: 'Nasal';
+      font-size: 1.250em;
+      font-weight: bold;
+      letter-spacing: 0.125em;
+      color: #ffff;
+      opacity: 0;
+      transform: translate(-50%, -50%);
+      /* ensures text starts in the middle of the image */
+      transition: .3s ease-in-out;
+   }
+   .gallery-text2 {
+      top: 60%;
+      font-size: 1em;
+   }
+   .gallery-container:hover .gallery-text1, .gallery-container:hover .gallery-text2 {
+      opacity: 1;
+      /* ensures the text becomes visible on hover */
+   }
+}
 
+/* DESKTOP */
+
+@media only screen and (min-width: 958px) {
+   .gallery-display {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-row-gap: 3em;
+   }
+   .gallery-container {
+      margin-bottom: 0;
+   }
+   .gallery-container {
+      order: 0;
+   }
+}
+
+/* DESKTOP LARGE*/
+
+@media only screen and (min-width: 1845px) {
    .art-1 {
       order: 1;
    }
@@ -48,7 +158,7 @@
    }
 
    .art-5 {
-      order: 10;
+      order: 6;
    }
 
    .art-6 {
@@ -56,11 +166,11 @@
    }
 
    .art-7 {
-      order: 9;
+      order: 7;
    }
 
    .art-8 {
-      order: 16;
+      order: 20;
    }
 
    .art-9 {
@@ -80,7 +190,7 @@
    }
 
    .art-13 {
-      order: 6;
+      order: 8;
    }
 
    .art-14 {
@@ -88,7 +198,7 @@
    }
 
    .art-15 {
-      order: 7;
+      order: 8;
    }
 
    .art-16 {
@@ -96,7 +206,7 @@
    }
 
    .art-17 {
-      order: 20;
+      order: 16;
    }
 
    .art-18 {
@@ -106,64 +216,8 @@
    .art-19 {
       order: 18;
    }
-
+   
    .art-20 {
       order: 19;
-   }
-
-   .gallery-image:hover {
-      filter: brightness(40%);
-      /* acts as substitute for an overlay - overlay gets in way of modal */
-      transition: .3s ease-in-out;
-   }
-
-   .gallery-text1, 
-   .gallery-text2 {
-      z-index: 1;
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      text-align: center;
-      font-family: 'Nasal';
-      font-size: 1.250em;
-      font-weight: bold;
-      letter-spacing: 0.125em;
-      color: #ffff;
-      opacity: 0;
-      pointer-events: none;
-      transform: translate(-50%, -50%);
-      /* ensures text starts in the middle of the image */
-      transition: .3s ease-in-out;
-   }
-
-   .gallery-text2 {
-      top: 60%;
-      font-size: 1em;
-   }
-
-   .gallery-container:hover 
-   .gallery-text1, 
-   .gallery-container:hover 
-   .gallery-text2 {
-      opacity: 1;
-      /* ensures the text becomes visible on hover */
-   }
-}
-
-/* DESKTOP */
-@media only screen and (min-width: 958px) {
-   .gallery-display {
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      grid-row-gap: 3em;
-   }
-
-   .gallery-container {
-      margin-bottom: 0;
-   }
-
-   .gallery-container {
-      order: 0;
    }
 }

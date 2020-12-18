@@ -11,6 +11,17 @@ header {
    margin: 0.625em;
 }
 
+.pill-link,
+.nav-link,
+.art-link,
+.code-link,
+.copy-link,
+.blog-link,
+.bio-link {
+   outline-color: #DA3CAC;
+
+}
+
 nav {
    display: none;
 }
@@ -38,7 +49,8 @@ li {
    color: #000000;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
    color: #DA3CAC;
    transition: .3s ease-in-out;
 }

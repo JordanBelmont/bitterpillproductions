@@ -21,12 +21,19 @@
 
 /* IPAD */
 @media only screen and (min-width: 550px) {
-   .foot-icon:hover {
+   .foot-icon-link,
+   .code-icon-link {
+      outline-color: #DA3CAC;
+   }
+   
+   .foot-icon:hover,
+   .foot-icon-link:focus .foot-icon {
       filter: invert(30%) sepia() saturate(1000%) hue-rotate(280deg) contrast(80%);
       transition: .3s ease-in-out;
    }
-   
-   .code-icon:hover {
+
+   .code-icon:hover,
+   .code-icon-link:focus .code-icon {
       filter: invert(5%) sepia() saturate(1000%) hue-rotate(280deg) contrast(75%);
       transition: .3s ease-in-out;
    }
@@ -38,11 +45,11 @@
       margin-bottom: 10px;
    }
 
-   .code-icon-container {
+   /* .code-icon-container {
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0%;
-   }
+   } */
 }
 

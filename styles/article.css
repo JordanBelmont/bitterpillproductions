@@ -21,6 +21,7 @@
    letter-spacing: 2px;
    line-height: 25px;
    text-transform: uppercase;
+   pointer-events: none;
 }
 
 .article-title:after, 
@@ -33,14 +34,15 @@
 }
 
 .article-head {
+   margin-top: 40px;
+   text-align: center;
    font-family: "Nasal";
    font-weight: bold;
    font-size: 18px;
    letter-spacing: 2px;
    line-height: 20px;
    text-transform: uppercase;
-   text-align: center;
-   margin-top: 40px;
+   pointer-events: none;
 }
 
 .article-intro {
@@ -49,6 +51,7 @@
    font-size: 16px;
    letter-spacing: 1px;
    line-height: 20px;
+   pointer-events: none;
 }
 
 .article-copy {
@@ -57,6 +60,7 @@
    font-size: 16px;
    letter-spacing: 1px;
    line-height: 20px;
+   pointer-events: none;
 }
 
 .article-image {
@@ -77,9 +81,11 @@
    text-decoration: none;
    letter-spacing: 1px;
    color: #575757;
+   outline-color: #DA3CAC;
 }
 
-.article-back:hover {
+.article-back:hover,
+.article-back:focus {
    color: #DA3CAC;
    transition: .3s ease-in-out;
 }
@@ -94,10 +100,7 @@
    font-size: 13px;
    letter-spacing: 1px;
    line-height: 20px;
-}
-
-/* IPAD */
-@media only screen and (min-width: 550px) {
+   pointer-events: none;
 }
 
 /* DESKTOP */
@@ -109,5 +112,12 @@
    .article-card {
       width: 100%;
       padding: 40px 20px 20px 20px;
+   }
+}
+
+/* DESKTOP LARGE*/
+@media only screen and (min-width: 1845px) {
+   .article-display {
+      margin: 30px 400px 30px 400px;
    }
 }

@@ -123,18 +123,18 @@
 /* DESKTOP */
 @media only screen and (min-width: 958px) {
    .primary-top-header {
-      left: 8%;
+      left: 9%;
    }
    
    .primary-bottom-header {
-      left: 17.5%;
+      left: 18.5%;
    }
    
    .secondary-top-header {
-      left: 12.5%;
+      left: 13.5%;
    }
    
    .secondary-bottom-header {
-      left: 4.5%;
+      left: 5.5%;
    }
 }
