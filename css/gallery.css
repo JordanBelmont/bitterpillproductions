@@ -16,8 +16,7 @@
    display: none;
 }
 
-/* IPAD */
-
+/* * IPAD */
 @media only screen and (min-width: 550px) {
    .gallery-display {
       display: grid;
@@ -122,8 +121,7 @@
    }
 }
 
-/* DESKTOP */
-
+/* * DESKTOP */
 @media only screen and (min-width: 958px) {
    .gallery-display {
       display: grid;
@@ -138,8 +136,7 @@
    }
 }
 
-/* DESKTOP LARGE*/
-
+/* * DESKTOP LARGE*/
 @media only screen and (min-width: 1845px) {
    .art-1 {
       order: 1;

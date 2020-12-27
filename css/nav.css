@@ -19,7 +19,6 @@ header {
 .blog-link,
 .bio-link {
    outline-color: #DA3CAC;
-
 }
 
 nav {
@@ -118,7 +117,7 @@ li {
    stroke-width: 6;
 }
 
-/* IPAD */
+/* * IPAD */
 @media only screen and (min-width: 550px) {
    nav {
       display: inline;

@@ -103,7 +103,7 @@
    pointer-events: none;
 }
 
-/* DESKTOP */
+/* * DESKTOP */
 @media only screen and (min-width: 958px) {
    .article-display {
       margin: 30px 100px 30px 100px;
@@ -115,7 +115,7 @@
    }
 }
 
-/* DESKTOP LARGE*/
+/* * DESKTOP LARGE*/
 @media only screen and (min-width: 1845px) {
    .article-display {
       margin: 30px 400px 30px 400px;

@@ -154,7 +154,7 @@
    object-fit: cover;
 }
 
-/* IPAD */
+/* * IPAD */
 @media only screen and (min-width: 550px) {
    .bio-display {
       display: grid;
@@ -241,7 +241,7 @@
    margin-bottom: 50px;
 }
 
-/* DESKTOP */
+/* * DESKTOP */
 @media only screen and (min-width: 958px) {
    .bio-display {
       display: grid;
@@ -330,7 +330,7 @@
    }
 }
 
-/* DESKTOP LARGE*/
+/* * DESKTOP LARGE*/
 @media only screen and (min-width: 1845px) {
    .bio-display {
       margin: 30px 250px 30px 250px;

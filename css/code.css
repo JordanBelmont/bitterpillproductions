@@ -13,7 +13,8 @@
    background-color: #ececec;
 }
 
-.code-background-1 {
+.code-background-1,
+.code-background-2 {
    display: flex;
    flex-direction: column;
    justify-content: space-around;
@@ -23,7 +24,11 @@
 }
 
 .code-background-1 {
-   background-image: url("../images/code-images/Code 1.jpg")
+   background-image: url("../images/code-images/Code-1.jpg")
+}
+
+.code-background-2 {
+   background-image: url("../images/code-images/Code-2.jpg")
 }
 
 .code-title {
@@ -66,7 +71,7 @@
    width: 100%;
 }
 
-   /* IPAD */
+/* * IPAD */
 @media only screen and (min-width: 550px) {
    .code-display {
       display: grid;
@@ -79,6 +84,7 @@
    }
 
    .code-background-1:hover,
+   .code-background-2:hover,
    .code-container:focus .code-background-1 {
       filter: brightness(40%);
       transition: .3s ease-in-out;
@@ -89,7 +95,7 @@
    }
 }
 
-/* DESKTOP */
+/* * DESKTOP */
 @media only screen and (min-width: 958px) {
    .code-display {
       display: grid;

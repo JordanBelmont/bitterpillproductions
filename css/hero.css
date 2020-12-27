@@ -45,7 +45,7 @@
    display: none;
 }
 
-/* IPAD */
+/* * IPAD */
 @media only screen and (min-width: 550px) {
    .hero-container {
       margin: 30px 40px 30px 40px;
@@ -120,7 +120,7 @@
    }
 }
 
-/* DESKTOP */
+/* * DESKTOP */
 @media only screen and (min-width: 958px) {
    .primary-top-header {
       left: 9%;
