@@ -19,7 +19,7 @@
 .primary-top-header,
 .primary-bottom-header {
    position: absolute;
-   font-family: 'Virtualreality';
+   font-family: 'VirtualReality';
    font-size: 4.5vw;
    color: #68E931;
    text-shadow: 1px 1px 10px #68E931, 1px 1px 10px #68E931;
@@ -72,7 +72,7 @@
    .primary-top-header,
    .primary-bottom-header {
       position: absolute;
-      font-family: 'Virtualreality';
+      font-family: 'VirtualReality';
       font-size: 2vw;
       color: #68E931;
       text-shadow: 1px 1px 10px #68E931, 1px 1px 10px #68E931;
@@ -108,7 +108,7 @@
    .hover-box:hover .secondary-bottom-header {
       position: absolute;
       display: block;
-      font-family: 'Virtualreality';
+      font-family: 'VirtualReality';
       font-size: 2vw;
       color: #DA3CAC;
       text-shadow: 1px 1px 10px #DA3CAC, 1px 1px 10px #DA3CAC;

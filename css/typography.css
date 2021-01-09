@@ -1,7 +1,7 @@
 @font-face {
    font-family: 'VirtualReality';
    font-weight: normal;
-   src: url('../fonts/VirtualReality-Regular.ttf') format('truetype')
+   src: url('../fonts/virtualreality-regular.ttf') format('truetype')
 }
 
 @font-face {
@@ -11,21 +11,20 @@
 }
 
 @font-face {
-   font-family: 'mrsmonster';
+   font-family: 'MrsMonster';
    font-weight: normal;
    src: url('../fonts/mrsmonster.ttf') format('truetype')
 }
 
 @font-face {
-   font-family: 'coffee&tea';
+   font-family: 'Coffee&Tea';
    font-weight: normal;
    src: url('../fonts/coffee&tea.ttf') format('truetype')
 }
 
 @font-face {
-   font-family: 'carosello';
+   font-family: 'Carosello';
    font-weight: normal;
-   src: url('../fonts/Carosello-Regular.otf') format('opentype')
+   src: url('../fonts/carosello-Regular.otf') format('opentype')
 }
-
 

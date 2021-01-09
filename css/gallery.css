@@ -12,7 +12,8 @@
    cursor: pointer;
 }
 
-.gallery-text1, .gallery-text2 {
+.gallery-text1, 
+.gallery-text2 {
    display: none;
 }
 
@@ -89,7 +90,8 @@
    .art-20 {
       order: 19;
    }
-   .gallery-image:hover, .gallery-image:focus {
+   .gallery-image:hover, 
+   .gallery-image:focus {
       filter: brightness(40%);
       /* acts as substitute for an overlay - overlay gets in way of modal */
       transition: .3s ease-in-out;
@@ -115,7 +117,10 @@
       top: 60%;
       font-size: 1em;
    }
-   .gallery-container:hover .gallery-text1, .gallery-container:hover .gallery-text2 {
+   .gallery-container:hover 
+   .gallery-text1, 
+   .gallery-container:hover 
+   .gallery-text2 {
       opacity: 1;
       /* ensures the text becomes visible on hover */
    }
@@ -136,7 +141,7 @@
    }
 }
 
-/* * DESKTOP LARGE*/
+/* * DESKTOP LARGE */
 @media only screen and (min-width: 1845px) {
    .art-1 {
       order: 1;

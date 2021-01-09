@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html>
 
 <head>
    <meta charset="utf-8">
@@ -18,10 +18,22 @@
    <link rel="apple-touch-icon" sizes="144x144" href="icons/favicon/apple-touch-icon-144x144.png">
    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicon/apple-touch-icon-152x152.png">
    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-touch-icon-180x180.png">
-
+   
    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap"/>
+   <link href='https://css.gg/close.css' rel='stylesheet'>
+   <link href='https://css.gg/check.css' rel='stylesheet'>
+   <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+   />
    <script defer src="javascript/burger.js"></script>
-   <title>Bitter Pill Productions: Bio</title>
+   <script defer src="build/static/js/runtime-main.f1afe624.js"></script>
+   <script defer src="./build/static/js/2.5e1b6175.chunk.js"></script>
+   <script defer src="./build/static/js/main.a3e8fac1.chunk.js"></script>
+   <title>Wanna-Do List</title>
 </head>
 
 <body>
@@ -32,10 +44,10 @@
       <nav id=navBurger>
          <ul class="nav-ul">
             <li><a class="nav-link" href="art.html">ART</a></li>
-            <li><a class="nav-link" href="code.html">CODE</a></li>
+            <li><a class="code-link" href="code.html">CODE</a></li>
             <li><a class="nav-link" href="copy.html">COPY</a></li>
             <li><a class="nav-link" href="blog.html">BLOG</a></li>
-            <li><a class="bio-link" href="bio.html">BIO</a></li>
+            <li><a class="nav-link" href="bio.html">BIO</a></li>
          </ul>
       </nav>
       <button class="burger-button" id='burgerButton'>
@@ -46,69 +58,11 @@
          </svg>
       </button>
    </header>
-
-   <div class="bio-display">
-      <div class="bio-profile-title-container bio-1">
-         <h1 class="bio-profile-title">PROFILE</h1>
-      </div>
-
-      <div class="bio-profile-container bio-2">
-         <h2 class="bio-heading">NAME:</h2>
-         <p class="bio-stats-prof">Jordan Belmont</p>
-         <br><br>
-         <h2 class="bio-heading">RESIDENCE:</h2>
-         <p class="bio-stats-prof">Bristol, United Kingdom</p>
-         <br><br>
-         <h2 class="bio-heading">FAVOURITE FOOD:</h2>
-         <p class="bio-stats-prof">Sushi</p>
-         <br><br>
-         <p class="bio-stats">
-            Jordan Belmont has had creativity coursing through his veins for as long as he can
-            remember. From earning his illustration degree at university to working as a professional copywriter,
-            bringing form to his imagination has always come naturally.
-            <br><br>
-            Having recently completed an intensive computer programming bootcamp, Jordan has taken his pre-existing
-            skills and has combined them with a burgeoning passion for front-end development to carve a path for himself
-            in his professional life.
-            <br><br>
-            Continuing his coding education in his free time, Jordan has come to specialise in (or has at least dabbled in) such languages and
-            frameworks as HTML, CSS, JavaScript, ReactJS/Redux, Angular, Ruby, PHP and Node.JS.
-            <br><br>
-            Additionally, he has a strong penchant for hitting the gym, playing boardgames, reading dystopian fiction, and admits his biggest weakness is that he only has two hands with which to satiate his creative hunger.
-            <br><br>
-            He also has a tendency to write about himself in the third person.
-            <br><br>
-            - Jordan Belmont
-         </p>
-      </div>
-
-      <div class="bio-image-container1 bio-3">
-         <img class="bio-image" src="images/bio-images/Profile1.png" alt="bio picture 1">
-      </div>
-
-      <div class="bio-contact-title-container bio-4">
-         <h1 class="bio-contact-title">CONTACT ME</h1>
-      </div>
-
-      <div class="bio-contact-container bio-5">
-         <form class="bio-contact-form" id="contactForm" method="POST" action="contact-form.php">
-            <label class="bio-label full-name" for="inputname">FULL NAME</label>
-            <input class="bio-input" id="inputName" type="name" name="name" required />
-            <label class="bio-label address" for="inputemail">E-MAIL ADDRESS</label>
-            <input class="bio-input" id="inputEmail" type="email" name="email" pattern=".+@globex.com" required />
-            <label class="bio-label message" for="message">MESSAGE</label>
-            <textarea class="bio-textarea" id="message" name="text" rows="10" cols="33" required></textarea>
-            <div class="bio-submit-container">
-               <input class="bio-submit-button" type="submit" value="SEND" />
-            </div>
-         </form>
-      </div>
-
-      <div class="bio-image-container2 bio-6">
-         <img class="bio-image" src="images/bio-images/Profile2.png" alt="bio picture 2">
-      </div>
+   
+   <div class="todo-body">
+   <div id="root"></div>
    </div>
-
+   
    <footer>
       <p class="foot-text">For all your creative aches and pains</p>
       <div class="foot-icon-container">

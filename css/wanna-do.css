@@ -1,0 +1,208 @@
+body {
+   font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue", sans-serif;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+.todo-body {
+   background-image: url(../images/code-images/wanna-do/paper.jpg);
+   background-size: cover;
+   background-position: 50%;
+   background-repeat: no-repeat;
+   font-family: 'Poppins', sans-serif;
+   min-height: 100vh;
+   margin: 30px 40px 30px 40px;
+}
+
+.todo-header {
+   font-size: 3rem;
+   min-height: 20vh;
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+}
+
+.todo-form {
+   min-height: 20vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.wanna {
+   font-family: 'Coffee&Tea', sans-serif;
+   font-size: 3rem;
+   letter-spacing: 1px;
+   color: red;
+   transform: rotate(-5deg);
+   position: absolute;
+   top: 24%;
+   right: 43%;
+}
+
+.to-do {
+   -webkit-text-decoration: line-through red;
+   text-decoration: line-through red;
+   margin-right: 1rem
+}
+
+.todo-form input {
+   font-family: 'Coffee&Tea', sans-serif;
+   letter-spacing: 1px;
+   padding: .5rem;
+   width: 25%
+}
+
+.todo-button,
+.todo-form input {
+   font-size: 2rem;
+   border: none;
+   background: #fff
+}
+
+.todo-button {
+   padding: .4rem;
+   color: #000;
+   cursor: pointer;
+   transition: all .3s ease
+}
+
+.todo-container {
+   display: flex;
+   justify-content: center;
+   align-items: center
+}
+
+.todo-list {
+   min-width: 30%;
+   list-style: none
+}
+
+.todo {
+   font-family: 'Coffee&Tea', sans-serif;
+   letter-spacing: 1px;
+   margin-bottom: 1rem;
+   background: #fff;
+   font-size: 3rem;
+   color: #000;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   transition: all 1s ease
+}
+
+.todo-select {
+   width: 11rem;
+   padding: .9rem;
+   font-size: 1rem
+}
+
+.todo li {
+   flex: 1 1
+}
+
+.complete-btn,
+.delete-btn {
+   background:#ff4d00;
+   color: #000;
+   border: 2px #000;
+   padding: 1rem;
+   cursor: pointer;
+   margin: .5rem
+}
+
+.complete-btn {
+   background: #0bd4a2;
+}
+
+.todo-item {
+   padding: 0 .5rem;
+   text-align: center
+}
+
+.fa-dizzy,
+.fa-laugh,
+.fa-sort-down {
+   pointer-events: none;
+   font-size: 2rem
+}
+
+.completed {
+   text-decoration: line-through;
+   opacity: .5
+}
+
+.todo-select {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   -ms-appearance: none;
+   appearance: none;
+   outline: 0;
+   box-shadow: none;
+   border: 0 !important;
+   background-image: none;
+   color: #000;
+   font-family: 'Poppins', sans-serif;
+   cursor: pointer
+}
+
+.select {
+   margin: 1rem;
+   position: relative;
+   overflow: hidden
+}
+
+.select:after {
+   content: '\25BC';
+   position: absolute;
+   top: 0;
+   right: 0;
+   padding: 1.1rem;
+   color: #000;
+   cursor: pointer;
+   pointer-events: none;
+}
+
+/* * IPAD */
+@media only screen and (min-width: 550px) {
+   .todo-header {
+      font-size: 3rem;
+      min-height: 20vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+   }
+
+   .wanna {
+      font-family: 'Coffee&Tea', sans-serif;
+      font-size: 4rem;
+      letter-spacing: 1px;
+      color: red;
+      transform: rotate(-5deg);
+      position: absolute;
+      top: 28%;
+      right: 45%;
+   }
+}
+
+/* * DESKTOP */
+@media only screen and (min-width: 958px) {
+   .todo-header {
+      font-size: 5rem;
+      min-height: 20vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+   }
+   
+   .wanna {
+      font-family: 'Coffee&Tea', sans-serif;
+      font-size: 6rem;
+      letter-spacing: 1px;
+      color: red;
+      transform: rotate(-5deg);
+      position: absolute;
+      top: 23%;
+      right: 50%;
+   }
+}

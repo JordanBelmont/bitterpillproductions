@@ -35,7 +35,7 @@
 }
 
 .sothoth-slogan-container p {
-   font-family: 'carosello';
+   font-family: 'Carosello';
    color: red;
    font-size: 5vw;
    margin-top: 10px;
@@ -75,7 +75,7 @@
 .sothoth-input {
    width: 100%;
    font-size: 5vw;
-   font-family: 'coffee&tea';
+   font-family: 'Coffee&Tea';
    text-align: center;
    border-radius: 1rem;
    padding: 5px;
@@ -92,7 +92,7 @@
 }
 
 .sothoth-answer {
-   font-family: 'mrsmonster';
+   font-family: 'MrsMonster';
    pointer-events: none;
    width: 100%;
    text-align: center;
@@ -102,10 +102,6 @@
 .sothoth-answer::selection {
    color: none;
    background: none;
-}
-
-/* * IPAD */
-@media only screen and (min-width: 550px) {
 }
 
 /* * DESKTOP */
@@ -190,7 +186,7 @@
    }
 
    .sothoth-input::placeholder {
-      font-family: 'coffee&tea';
+      font-family: 'Coffee&Tea';
       color: rgb(179, 179, 179);
    }
 
