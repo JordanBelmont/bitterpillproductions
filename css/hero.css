@@ -50,7 +50,7 @@
    .hero-container {
       margin: 30px 40px 30px 40px;
    }
-   
+
    .hero {
       position: relative;
       padding: 55% 25%;
@@ -60,7 +60,7 @@
       background-repeat: no-repeat;
       background-image: url("../images/hero/hero1.jpg");
    }
-   
+
    .hover-box {
       position: absolute;
       width: 28%;
@@ -77,33 +77,33 @@
       color: #68E931;
       text-shadow: 1px 1px 10px #68E931, 1px 1px 10px #68E931;
    }
-   
+
    .primary-top-header {
       top: 23%;
       left: 6%;
       pointer-events: none;
    }
-   
+
    .primary-bottom-header {
       top: 61%;
       left: 15.5%;
       pointer-events: none;
    }
-   
+
    .secondary-top-header {
       display: none;
       top: 23%;
       left: 11%;
       pointer-events: none;
    }
-   
+
    .secondary-bottom-header {
       display: none;
       top: 61%;
       left: 3%;
       pointer-events: none;
    }
-   
+
    .hover-box:hover .secondary-top-header, 
    .hover-box:hover .secondary-bottom-header {
       position: absolute;
@@ -113,7 +113,7 @@
       color: #DA3CAC;
       text-shadow: 1px 1px 10px #DA3CAC, 1px 1px 10px #DA3CAC;
    }
-   
+
    .hover-box:hover .primary-top-header, 
    .hover-box:hover .primary-bottom-header {
       display: none;
@@ -125,15 +125,15 @@
    .primary-top-header {
       left: 9%;
    }
-   
+
    .primary-bottom-header {
       left: 18.5%;
    }
-   
+
    .secondary-top-header {
       left: 13.5%;
    }
-   
+
    .secondary-bottom-header {
       left: 5.5%;
    }

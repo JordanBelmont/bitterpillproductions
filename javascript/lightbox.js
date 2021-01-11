@@ -3,7 +3,7 @@
 let lightbox = document.createElement('div')
 lightbox.id = 'lightbox'
 document.body.appendChild(lightbox)
-let images = document.querySelectorAll('.gallery-image')
+let images = document.querySelectorAll('.gallery-container')
 
 // LIGHTBOX ON MOUSE-CLICK
 
@@ -11,7 +11,7 @@ images.forEach(image => {
    image.addEventListener('click', () => {
       lightbox.classList.add('active')
       let img = document.createElement('img')
-      img.src = image.src
+      img.src = image.querySelector('img').src;
       while (lightbox.firstChild) {
          lightbox.removeChild(lightbox.firstChild)
       }
@@ -26,7 +26,7 @@ images.forEach(image => {
       if (e.key === "Enter") {
          lightbox.classList.add('active')
          let img = document.createElement('img')
-         img.src = image.src
+         img.src = image.querySelector('img').src;
          while (lightbox.firstChild) {
             lightbox.removeChild(lightbox.firstChild)
          }

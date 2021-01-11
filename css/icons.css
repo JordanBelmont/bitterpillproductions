@@ -25,7 +25,7 @@
    .code-icon-link {
       outline-color: #DA3CAC;
    }
-   
+
    .foot-icon:hover,
    .foot-icon-link:focus .foot-icon {
       filter: invert(30%) sepia() saturate(1000%) hue-rotate(280deg) contrast(80%);

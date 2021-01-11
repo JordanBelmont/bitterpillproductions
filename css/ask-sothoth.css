@@ -106,7 +106,6 @@
 
 /* * DESKTOP */
 @media only screen and (min-width: 958px) {
-
    .sothoth-display {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -149,16 +148,16 @@
    .sothoth-span {
       font-size: 3vw;
    }
-   
+
    .sothoth-key {
       text-indent: -60%;
       margin-top: 30px;
    }
-   
+
    .sothoth-guardian {
       text-indent: -30%;
    }
-   
+
    .sothoth-gate {
       text-indent: -10%;
    }
