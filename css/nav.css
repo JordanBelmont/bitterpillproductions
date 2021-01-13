@@ -68,9 +68,11 @@ nav {
    color: #DA3CAC;
 }
 
+/* BURGER MENU */
+
 .burger-button {
    position: absolute;
-   right: 2em;
+   left: 2em;
    top: 1.16em;
    border: none;
    background: none;
@@ -115,6 +117,89 @@ nav {
    stroke-dasharray: 90 207;
    stroke-dashoffset: -134;
    stroke-width: 6;
+}
+
+/* DARK MODE TOGGLE */
+
+.toggle-btn {
+   position: absolute;
+   top: 1.16em;
+   right: 3em;
+   width: 72.5px;
+   height: 37px;
+   margin: 0 auto;
+   border-radius: 40px;
+}
+
+.check {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   right: 0px;
+   bottom: 0px;
+   width: 100%;
+   height: 100%;
+   margin: 0px;
+   cursor: pointer;
+   opacity: 0;
+   z-index: 2;
+}
+
+.toggle-btn span {
+   position: absolute;
+   overflow: hidden;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   background-color: rgb(0, 0, 0);
+   border-radius: 40px;
+   opacity: 1;
+   transition: 0.2s ease background-color, 0.2s ease opacity;
+}
+
+.toggle-btn span:before,
+.toggle-btn span:after
+{
+   content: '';
+   position: absolute;
+   top: 4px;
+   left: -2px;
+   width: 29px;
+   height: 29px;
+   border-radius: 50%;
+   transition: 0.5s ease transform, 0.2s ease background-color;
+}
+
+.toggle-btn span:before
+{
+   background-color: rgb(0, 0, 0);
+   transform: translate(-58px, 0px);
+   z-index: 1;
+}
+
+.toggle-btn span:after {
+   background-color: rgb(255, 255, 255);
+   transform: translate(8px,0px);
+   z-index: 0;
+}
+
+.toggle-btn .check:checked + span {
+   background-color: rgb(255, 255, 255);
+}
+
+.toggle-btn .check:active + span {
+   opacity: 0.5;
+}
+
+.toggle-btn .check:checked + span:before {
+   background-color: white;
+   transform: translate(28px, -9px);
+}
+
+.toggle-btn .check:checked + span:after {
+   background-color: rgb(0, 0, 0);
+   transform: translate(39.5px, 0px);
 }
 
 /* * IPAD */
