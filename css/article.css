@@ -30,7 +30,7 @@
    width: 100px;
    height: 2px;
    margin: 0 10px;
-   background: #DA3CAC;
+   background: #D93CAC;
 }
 
 .article-head {
@@ -81,12 +81,12 @@
    text-decoration: none;
    letter-spacing: 1px;
    color: #575757;
-   outline-color: #DA3CAC;
+   outline-color: #D93CAC;
 }
 
 .article-back:hover,
 .article-back:focus {
-   color: #DA3CAC;
+   color: #D93CAC;
    transition: .3s ease-in-out;
 }
 

@@ -13,9 +13,6 @@
 }
 
 .code-icon-link {
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
    margin-top: 20px;
 }
 
@@ -23,19 +20,19 @@
 @media only screen and (min-width: 550px) {
    .foot-icon-link,
    .code-icon-link {
-      outline-color: #DA3CAC;
+      outline-color: #D93CAC;
    }
 
    .foot-icon:hover,
    .foot-icon-link:focus .foot-icon {
       filter: invert(30%) sepia() saturate(1000%) hue-rotate(280deg) contrast(80%);
-      transition: .3s ease-in-out;
+      transition: .2s ease-in-out;
    }
 
    .code-icon:hover,
    .code-icon-link:focus .code-icon {
       filter: invert(5%) sepia() saturate(1000%) hue-rotate(280deg) contrast(75%);
-      transition: .3s ease-in-out;
+      transition: .2s ease-in-out;
    }
 }
 

@@ -3,7 +3,7 @@ header {
    position: sticky;
    text-align: center;
    top: 0px;
-   background-color: white;
+   background-color: #F9F9F9;
 }
 
 .pill {
@@ -18,7 +18,7 @@ header {
 .copy-link,
 .blog-link,
 .bio-link {
-   outline-color: #DA3CAC;
+   outline-color: #D93CAC;
 }
 
 nav {
@@ -50,7 +50,7 @@ nav {
 
 .nav-link:hover,
 .nav-link:focus {
-   color: #DA3CAC;
+   color: #D93CAC;
    transition: .3s ease-in-out;
 }
 
@@ -65,7 +65,7 @@ nav {
    font-weight: bold;
    letter-spacing: 0.125em;
    text-decoration: none;
-   color: #DA3CAC;
+   color: #D93CAC;
 }
 
 /* BURGER MENU */
@@ -123,10 +123,10 @@ nav {
 
 .toggle-btn {
    position: absolute;
-   top: 1.16em;
-   right: 3em;
-   width: 72.5px;
-   height: 37px;
+   top: 1.9em;
+   right: 2.5em;
+   width: 36.25px;
+   height: 18.5px;
    margin: 0 auto;
    border-radius: 40px;
 }
@@ -152,40 +152,38 @@ nav {
    right: 0px;
    bottom: 0px;
    left: 0px;
-   background-color: rgb(0, 0, 0);
+   background-color: #000000;
    border-radius: 40px;
    opacity: 1;
    transition: 0.2s ease background-color, 0.2s ease opacity;
 }
 
 .toggle-btn span:before,
-.toggle-btn span:after
-{
+.toggle-btn span:after {
    content: '';
    position: absolute;
-   top: 4px;
-   left: -2px;
-   width: 29px;
-   height: 29px;
+   top: 2.2px;
+   left: -4px;
+   width: 13px;
+   height: 13px;
    border-radius: 50%;
    transition: 0.5s ease transform, 0.2s ease background-color;
 }
 
-.toggle-btn span:before
-{
-   background-color: rgb(0, 0, 0);
+.toggle-btn span:before {
+   background-color: #000000;
    transform: translate(-58px, 0px);
    z-index: 1;
 }
 
 .toggle-btn span:after {
-   background-color: rgb(255, 255, 255);
-   transform: translate(8px,0px);
+   background-color: #ECECEC;
+   transform: translate(8px, 0px);
    z-index: 0;
 }
 
 .toggle-btn .check:checked + span {
-   background-color: rgb(255, 255, 255);
+   background-color: #ECECEC;
 }
 
 .toggle-btn .check:active + span {
@@ -193,13 +191,13 @@ nav {
 }
 
 .toggle-btn .check:checked + span:before {
-   background-color: white;
-   transform: translate(28px, -9px);
+   background-color: #ECECEC;
+   transform: translate(18px, -2.5px);
 }
 
 .toggle-btn .check:checked + span:after {
    background-color: rgb(0, 0, 0);
-   transform: translate(39.5px, 0px);
+   transform: translate(24.75px, 0px);
 }
 
 /* * IPAD */
@@ -221,5 +219,28 @@ nav {
 
    .nav-ul li {
       align-items: flex-end;
+   }
+
+   .toggle-btn {
+      top: 1.16em;
+      right: 3em;
+      width: 72.5px;
+      height: 37px;
+   }
+
+   .toggle-btn span:before,
+   .toggle-btn span:after {
+      top: 5px;
+      left: -2px; 
+      width: 26px;
+      height: 26px; 
+   }
+
+   .toggle-btn .check:checked + span:before {
+      transform: translate(32px, -5px);
+   }
+
+   .toggle-btn .check:checked + span:after {
+      transform: translate(43.5px, 0px);
    }
 }
