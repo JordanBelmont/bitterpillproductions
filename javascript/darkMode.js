@@ -1,5 +1,10 @@
+// Dark Mode Toggle
+
 let swtch = document.querySelector('.check');
-let ball = document.querySelector('.ball');
+let logo = document.querySelector('.pill');
+let logoLight = "icons/logo/bitterpill-light.png";
+let logoDark = "icons/logo/bitterpill-dark.png";
+
 
 let currentTheme = localStorage.getItem("theme");
 if (currentTheme === "dark-theme") {
@@ -12,8 +17,13 @@ swtch.addEventListener("click", () => {
       localStorage.setItem('theme', '');
       document.body.classList.remove('dark-theme');
       swtch.classList.remove('checked');
+      logo.src = logoLight;
+      logo.classList.remove('pill-dark');
+
    } else {
       localStorage.setItem('theme', 'dark-theme');
       document.body.classList.add('dark-theme');
+      logo.src = logoDark;
+      logo.classList.add('pill-dark');
    }
 });

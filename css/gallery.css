@@ -173,10 +173,19 @@
    .gallery-container {
       order: 0;
    }
+
+   .gallery-text1 {
+      font-size: 1.500em;
+   }
+
+   .gallery-text2 {
+      font-size: 1.250em;
+   }
 }
 
 /* * DESKTOP LARGE */
 @media only screen and (min-width: 1845px) {
+
    .art-1 {
       order: 1;
    }

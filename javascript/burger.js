@@ -1,5 +1,5 @@
-const nav = document.getElementById('navBurger');
-const burger = document.getElementById('burgerButton');
+let nav = document.getElementById('navBurger');
+let burger = document.getElementById('burgerButton');
 
    burger.addEventListener('click', () => {
       burger.classList.toggle('opened');

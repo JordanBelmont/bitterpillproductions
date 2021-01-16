@@ -11,6 +11,10 @@ header {
    margin: 0.625em;
 }
 
+.pill-dark {
+   width: 5.3em;
+}
+
 .pill-link,
 .nav-link,
 .art-link,

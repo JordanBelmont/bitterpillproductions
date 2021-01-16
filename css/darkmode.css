@@ -1,12 +1,12 @@
 .dark-theme,
 .dark-theme header {
-   background-color: #181818;
+   background-color: #212121;
 }
 
 .dark-theme .nav-link,
 .dark-theme .foot-text {
    color: #e2e2e2;
-   outline-color: #00B42D;
+   outline-color: #D93CAC;
 }
 
 .dark-theme .pill-link,
@@ -16,7 +16,7 @@
 .dark-theme .copy-link,
 .dark-theme .blog-link,
 .dark-theme .bio-link {
-   outline-color: #00B42D;
+   outline-color: #D93CAC;
 }
 
 .dark-theme .line {
@@ -26,8 +26,11 @@
 .dark-theme .code-card,
 .dark-theme .blog-card,
 .dark-theme .article-card {
-   color: #AAAAAA;
+   color: #b8b8b8;
+   /* background-color: #373737; */
    background-color: #373737;
+   /* border: solid 2px #b97baf; */
+
    box-shadow: 0 3px 7px -1px hsl(0, 0%, 0%);
 }
 
@@ -41,7 +44,7 @@
 .dark-theme .bio-profile-title-container:before, 
 .dark-theme .bio-contact-title-container:after, 
 .dark-theme .bio-contact-title-container:before {
-   background-color: #00B42D;
+   background-color: #D93CAC;
 }
 
 .dark-theme .art-link, 
@@ -55,8 +58,8 @@
 .dark-theme .blog-read-more:focus,
 .dark-theme .article-back:hover,
 .dark-theme .article-back:focus {
-   color: #00B42D;
-   outline-color: #00B42D;
+   color: #D93CAC;
+   outline-color: #D93CAC;
 }
 
 .dark-theme .blog-read-more,
@@ -67,7 +70,7 @@
 .dark-theme .bio-contact-container,
 .dark-theme .sothoth-answer {
    color: #AAAAAA;
-   outline-color: #00B42D;
+   outline-color: #D93CAC;
 }
 
 .dark-theme .bio-input, 
@@ -84,6 +87,7 @@
 
 .dark-theme .bio-submit-button {
    color: #AAAAAA;
+   background-color: #181818;
 }
 
 .dark-theme .bio-submit-button:focus {
@@ -100,11 +104,12 @@
 
 .dark-theme .foot-icon:hover,
 .dark-theme .foot-icon-link:focus .foot-icon {
-   filter: invert(-40%) sepia() saturate(1000%) hue-rotate(825deg) contrast(80%);
+   filter: invert(40%) sepia() saturate(1000%) hue-rotate(85deg) contrast(80%);
+   transition: .2s ease-in-out;
 }
 
 .dark-theme .code-icon:hover,
 .dark-theme .code-icon-link:focus .code-icon {
-   filter: invert(5%) sepia() saturate(1000%) hue-rotate(280deg) contrast(75%);
+   filter: invert(28%) sepia() saturate(380%) hue-rotate(50deg) contrast(180%);
 }
 
