@@ -1,7 +1,7 @@
 // Dark Mode Toggle
 
 let swtch = document.querySelector('.check');
-let logo = document.querySelector('.pill');
+let logo = document.querySelector('.pill-light');
 let logoLight = "icons/logo/bitterpill-light.png";
 let logoDark = "icons/logo/bitterpill-dark.png";
 
@@ -10,6 +10,8 @@ let currentTheme = localStorage.getItem("theme");
 if (currentTheme === "dark-theme") {
    document.body.classList.add("dark-theme");
    swtch.checked = true;
+   logo.classList.add('pill-dark');
+   logo.src = logoDark;
 }
 
 swtch.addEventListener("click", () => {

@@ -6,13 +6,13 @@ header {
    background-color: #F9F9F9;
 }
 
-.pill {
+.pill-light {
    width: 5em;
    margin: 0.625em;
 }
 
 .pill-dark {
-   width: 5.3em;
+   width: 5.4em;
 }
 
 .pill-link,
@@ -166,8 +166,8 @@ nav {
 .toggle-btn span:after {
    content: '';
    position: absolute;
-   top: 2.2px;
-   left: -4px;
+   top: 2.8px;
+   left: -5px;
    width: 13px;
    height: 13px;
    border-radius: 50%;

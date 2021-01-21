@@ -6,16 +6,20 @@
    .art-6, 
    .art-7, 
    .art-8, 
-   .art-9, 
-   .art-10, 
-   .art-11, 
-   .art-12, 
    .art-13, 
    .art-14, 
    .art-15, 
    .art-18, 
    .art-19, 
-   .art-20 {
+   .art-20,
+   .copy-1, 
+   .copy-2, 
+   .copy-3, 
+   .copy-4, 
+   .copy-5, 
+   .copy-6, 
+   .copy-7, 
+   .copy-8 {
       grid-column: span 4;
       grid-row: span 6;
    }
@@ -26,16 +30,7 @@
    .art-17,
    .code-1,
    .code-2,
-   .code-3,
-   .copy-1, 
-   .copy-2, 
-   .copy-3, 
-   .copy-4, 
-   .copy-5, 
-   .copy-6, 
-   .copy-7, 
-   .copy-8, 
-   .copy-9 {
+   .code-3 {
       grid-column: span 8;
       grid-row: span 6;
    }
@@ -68,15 +63,6 @@
    .code-1,
    .code-2,
    .code-3,
-   .copy-1, 
-   .copy-2, 
-   .copy-3, 
-   .copy-4, 
-   .copy-5, 
-   .copy-6, 
-   .copy-7, 
-   .copy-8, 
-   .copy-9,
    .blog-1,
    .blog-2,
    .blog-3,
@@ -88,14 +74,6 @@
    .blog-9,
    .blog-10 {
       grid-column: span 6;
-      grid-row: span 6;
-   }
-
-   .art-9, 
-   .art-10, 
-   .art-11, 
-   .art-12 {
-      grid-column: span 3;
       grid-row: span 6;
    }
 
@@ -119,15 +97,6 @@
    .code-1,
    .code-2,
    .code-3,
-   .copy-1, 
-   .copy-2, 
-   .copy-3, 
-   .copy-4, 
-   .copy-5, 
-   .copy-6, 
-   .copy-7, 
-   .copy-8, 
-   .copy-9,
    .blog-1,
    .blog-2,
    .blog-3,
@@ -148,16 +117,20 @@
    .art-6, 
    .art-7, 
    .art-8, 
-   .art-9, 
-   .art-10, 
-   .art-11, 
-   .art-12, 
    .art-13, 
    .art-14, 
    .art-15, 
    .art-18, 
    .art-19, 
-   .art-20 {
+   .art-20,
+   .copy-1, 
+   .copy-2, 
+   .copy-3, 
+   .copy-4, 
+   .copy-5, 
+   .copy-6, 
+   .copy-7, 
+   .copy-8 {
       grid-column: span 3;
       grid-row: span 6;
    }
