@@ -27,10 +27,8 @@
 .dark-theme .blog-card,
 .dark-theme .article-card {
    color: #b8b8b8;
-   /* background-color: #373737; */
    background-color: #373737;
    /* border: solid 2px #b97baf; */
-
    box-shadow: 0 3px 7px -1px hsl(0, 0%, 0%);
 }
 
@@ -68,6 +66,7 @@
 .dark-theme .bio-contact-title-container,
 .dark-theme .bio-profile-container, 
 .dark-theme .bio-contact-container,
+.dark-theme .error-warning,
 .dark-theme .sothoth-answer {
    color: #AAAAAA;
    outline-color: #D93CAC;
