@@ -15,28 +15,29 @@ body {
 }
 
 .todo-header {
-   font-size: 3rem;
-   min-height: 20vh;
-   display: flex;
-   justify-content: center;
-   align-items: flex-end;
+   font-size: 2.5rem;
+   padding: 5rem;
 }
 
 .todo-form {
-   min-height: 20vh;
+   margin: 2rem;
+}
+
+.todo-form,
+.todo-header {
    display: flex;
-   justify-content: center;
-   align-items: center;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center
 }
 
 .wanna {
    font-family: 'Coffee&Tea', sans-serif;
-   font-size: 3rem;
    letter-spacing: 1px;
    color: red;
-   transform: rotate(-5deg);
+   transform: rotate(-10deg);
    position: absolute;
-   top: 24%;
+   top: 13%;
    right: 43%;
 }
 
@@ -47,24 +48,36 @@ body {
 }
 
 .todo-form input {
-   font-family: 'Coffee&Tea', sans-serif;
+   font-family: 'coffee&tea', sans-serif;
    letter-spacing: 1px;
-   padding: .5rem;
-   width: 25%
-}
-
-.todo-button,
-.todo-form input {
+   margin: 1rem;
+   padding: 0.5rem;
    font-size: 2rem;
    border: none;
-   background: #fff
+   background: white;
+   width: 90%
+}
+
+.todo-form input {
+   font-family: 'coffee&tea', sans-serif;
+   letter-spacing: 1px;
+   margin: 1rem;
+   padding: 0.5rem;
+   font-size: 2rem;
+   border: none;
+   background: white;
+   width: 90%
 }
 
 .todo-button {
-   padding: .4rem;
-   color: #000;
+   padding: 0.4rem;
+   margin: 1rem;
+   font-size: 2rem;
+   border: none;
+   background: white;
+   color: #000000;
    cursor: pointer;
-   transition: all .3s ease
+   transition: all 0.3s ease;
 }
 
 .todo-container {
@@ -91,11 +104,11 @@ body {
    transition: all 1s ease
 }
 
-.todo-select {
+/* .todo-select {
    width: 11rem;
    padding: .9rem;
    font-size: 1rem
-}
+} */
 
 .todo li {
    flex: 1 1
@@ -116,7 +129,7 @@ body {
 }
 
 .todo-item {
-   padding: 0 .5rem;
+   padding: 0rem .5rem;
    text-align: center
 }
 
@@ -143,7 +156,10 @@ body {
    background-image: none;
    color: #000;
    font-family: 'Poppins', sans-serif;
-   cursor: pointer
+   cursor: pointer;
+   width: 11rem;
+   padding: 0.5rem;
+   font-size: 1rem
 }
 
 .select {
@@ -157,7 +173,7 @@ body {
    position: absolute;
    top: 0;
    right: 0;
-   padding: 1.1rem;
+   padding: 0.5rem;
    color: #000;
    cursor: pointer;
    pointer-events: none;
@@ -166,43 +182,47 @@ body {
 /* * IPAD */
 @media only screen and (min-width: 550px) {
    .todo-header {
-      font-size: 3rem;
-      min-height: 20vh;
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-   }
-
-   .wanna {
-      font-family: 'Coffee&Tea', sans-serif;
-      font-size: 4rem;
-      letter-spacing: 1px;
-      color: red;
-      transform: rotate(-5deg);
-      position: absolute;
-      top: 28%;
-      right: 45%;
-   }
-}
-
-/* * DESKTOP */
-@media only screen and (min-width: 958px) {
-   .todo-header {
       font-size: 5rem;
-      min-height: 20vh;
-      display: flex;
+      margin: 0 6rem;
+      padding: 5rem;
+   }
+
+   .todo-form {
+      margin: 2rem;
+      padding: 2rem;
+   }
+
+   .todo-header, 
+   .todo-form {
+      flex-direction: row;
       justify-content: center;
-      align-items: flex-end;
    }
 
    .wanna {
-      font-family: 'Coffee&Tea', sans-serif;
-      font-size: 6rem;
-      letter-spacing: 1px;
-      color: red;
-      transform: rotate(-5deg);
-      position: absolute;
-      top: 23%;
+      top: 15%;
       right: 50%;
+   }
+
+   .todo-form input {
+      font-family: 'coffee&tea', sans-serif;
+      letter-spacing: 1px;
+      margin: 0px;
+      padding: 0.5rem;
+      font-size: 2rem;
+      border: none;
+      background: white;
+      width: 25%
+   }
+
+   .todo-button {
+      margin: 0rem;
+   }
+
+   .todo-select {
+      padding: 0.9rem;
+   }
+
+   .select::after {
+      padding: 1.1rem;
    }
 }
