@@ -94,15 +94,15 @@
       </div>
 
       <div class="bio-contact-container bio-5">
-         <form class="bio-contact-form" id="contactForm" method="POST" action="contact-form.php">
+         <form class="bio-contact-form" id="contactForm" method="POST" action="/php/contact-form.php">
             <label class="bio-label full-name" for="inputname">FULL NAME</label>
-            <input class="bio-input" id="inputName" type="name" name="name" required/>
+            <input class="bio-input" id="inputName" type="text" name="name" required>
             <label class="bio-label address" for="inputemail">E-MAIL ADDRESS</label>
-            <input class="bio-input" id="inputEmail" type="email" name="email" pattern=".+@globex.com" required/>
+            <input class="bio-input" id="inputEmail" type="email" name="email" required>
             <label class="bio-label message" for="message">MESSAGE</label>
-            <textarea class="bio-textarea" id="message" name="text" rows="10" cols="33" required></textarea>
+            <textarea class="bio-textarea" id="inputMessage" name="message" rows="10" cols="33" required></textarea>
             <div class="bio-submit-container">
-               <input class="bio-submit-button" type="submit" value="SEND"/>
+               <input class="bio-submit-button" id="inputSubmit" type="submit" value="SEND">
             </div>
          </form>
       </div>

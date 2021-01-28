@@ -1,14 +1,23 @@
 <?php
-   if(isset($_POST['submit'])) {
       $name = $_POST['name'];
-      $mailFrom = $_POST['mail'];
+      $visitorMail = $_POST['email'];
       $message = $_POST['message'];
 
-      $mailTo = "jordan.belmont@hotmail.com";
-      $headers = "From: ".$mailFrom;
-      $txt = "You have received an E-mail from ".$name.".\n\n".$message;
+      $emailFrom = "jordanbelmont@bitterpillproductions.com";
 
-      mail($mailTo, $txt, $headers);
-      header("Location: bio.html?mailsend");
-   }
+      $emailSubject = "Bitter Pill Mail";
+
+      $emailMessage = "NAME: $name.\n\n".
+                        "EMAIL ADDRESS: $visitorMail.\n\n".
+                           "MESSAGE: \n\n$message.\n\n";
+
+      $to = "jordan.belmont@hotmail.com";
+
+      $headers = "From: $emailFrom \r\n";
+
+      $headers .= "Reply-To: $visitorMail \r\n";
+
+      mail($to, $emailSubject, $emailMessage, $headers);
+
+      header("Location: https://bitterpillproductions.com/bio.html");
 ?>

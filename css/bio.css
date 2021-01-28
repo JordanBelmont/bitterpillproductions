@@ -1,7 +1,6 @@
 .bio-display {
    display: flex;
    flex-direction: column;
-   justify-content: flex-end;
    margin: 30px 40px 30px 40px;
 }
 
@@ -60,7 +59,6 @@
 
 .bio-profile-container, 
 .bio-contact-container {
-   text-align: justify;
    font-family: 'Nasal';
    font-size: 18px;
    letter-spacing: 1px;
